@@ -1,0 +1,147 @@
+Source,Target,SLabel,TLabel,Sclass,Tclass
+2,0,Losing Bin Laden,780 Years for Revenge,c,n
+2,1,Losing Bin Laden,Bush vs. the Beltway,c,c
+3,2,The Man Who Warned America,Losing Bin Laden,c,c
+5,2,A National Party No More,Losing Bin Laden,c,c
+6,2,Bush Country,Losing Bin Laden,c,c
+6,5,Bush Country,A National Party No More,c,c
+7,2,Dereliction of Duty,Losing Bin Laden,c,c
+7,5,Dereliction of Duty,A National Party No More,c,c
+8,2,Legacy,Losing Bin Laden,c,c
+8,5,Legacy,A National Party No More,c,c
+9,2,Off with Their Heads,Losing Bin Laden,c,c
+9,4,Off with Their Heads,Why America Slept,c,n
+9,5,Off with Their Heads,A National Party No More,c,c
+9,6,Off with Their Heads,Bush Country,c,c
+9,7,Off with Their Heads,Dereliction of Duty,c,c
+9,8,Off with Their Heads,Legacy,c,c
+10,2,Persecution,Losing Bin Laden,c,c
+10,5,Persecution,A National Party No More,c,c
+10,9,Persecution,Off with Their Heads,c,c
+11,2,Rumsfeld's War,Losing Bin Laden,c,c
+11,5,Rumsfeld's War,A National Party No More,c,c
+11,9,Rumsfeld's War,Off with Their Heads,c,c
+12,2,Breakdown,Losing Bin Laden,c,c
+12,9,Breakdown,Off with Their Heads,c,c
+13,2,Betrayal,Losing Bin Laden,c,c
+14,2,Shut Up and Sing,Losing Bin Laden,c,c
+14,9,Shut Up and Sing,Off with Their Heads,c,c
+15,2,Meant To Be,Losing Bin Laden,n,c
+15,9,Meant To Be,Off with Their Heads,n,c
+16,2,The Right Man,Losing Bin Laden,c,c
+17,2,Ten Minutes from Normal,Losing Bin Laden,c,c
+17,5,Ten Minutes from Normal,A National Party No More,c,c
+18,2,Hillary's Scheme,Losing Bin Laden,c,c
+18,5,Hillary's Scheme,A National Party No More,c,c
+19,2,The French Betrayal of America,Losing Bin Laden,c,c
+19,5,The French Betrayal of America,A National Party No More,c,c
+20,2,Tales from the Left Coast,Losing Bin Laden,c,c
+20,5,Tales from the Left Coast,A National Party No More,c,c
+20,9,Tales from the Left Coast,Off with Their Heads,c,c
+21,2,Hating America,Losing Bin Laden,c,c
+21,5,Hating America,A National Party No More,c,c
+21,9,Hating America,Off with Their Heads,c,c
+22,2,The Third Terrorist,Losing Bin Laden,c,c
+23,2,Endgame,Losing Bin Laden,c,c
+23,5,Endgame,A National Party No More,c,c
+24,2,Spin Sisters,Losing Bin Laden,c,c
+24,5,Spin Sisters,A National Party No More,c,c
+28,5,The Death of Right and Wrong,A National Party No More,c,c
+28,9,The Death of Right and Wrong,Off with Their Heads,c,c
+29,5,Useful Idiots,A National Party No More,c,c
+30,5,Let Freedom Ring,A National Party No More,c,c
+31,9,Those Who Trespass,Off with Their Heads,c,c
+32,5,Bias,A National Party No More,c,c
+33,9,Slander,Off with Their Heads,c,c
+34,9,The Savage Nation,Off with Their Heads,c,c
+35,5,Deliver Us from Evil,A National Party No More,c,c
+35,9,Deliver Us from Evil,Off with Their Heads,c,c
+36,5,Give Me a Break,A National Party No More,c,c
+36,9,Give Me a Break,Off with Their Heads,c,c
+37,5,The Enemy Within,A National Party No More,c,c
+38,5,The Real America,A National Party No More,c,c
+39,5,Who's Looking Out for You?,A National Party No More,c,c
+39,9,Who's Looking Out for You?,Off with Their Heads,c,c
+40,5,The Official Handbook Vast Right Wing Conspiracy,A National Party No More,c,c
+41,5,Power Plays,A National Party No More,n,c
+41,9,Power Plays,Off with Their Heads,n,c
+42,9,Arrogance,Off with Their Heads,c,c
+44,9,Hollywood Interrupted,Off with Their Heads,c,c
+45,9,Fighting Back,Off with Their Heads,c,c
+49,48,Rogue Nation,The Great Unraveling,l,l
+50,48,The Sorrows of Empire,The Great Unraveling,l,l
+52,25,American Dynasty,All the Shah's Men,l,n
+52,43,American Dynasty,The Bushes,l,c
+52,48,American Dynasty,The Great Unraveling,l,l
+52,50,American Dynasty,The Sorrows of Empire,l,l
+52,51,American Dynasty,Against All Enemies,l,l
+53,26,Big Lies,The Price of Loyalty,l,l
+53,27,Big Lies,"House of Bush, House of Saud",l,l
+53,48,Big Lies,The Great Unraveling,l,l
+53,51,Big Lies,Against All Enemies,l,l
+53,52,Big Lies,American Dynasty,l,l
+54,48,The Lies of George W. Bush,The Great Unraveling,l,l
+54,52,The Lies of George W. Bush,American Dynasty,l,l
+54,53,The Lies of George W. Bush,Big Lies,l,l
+55,52,Worse Than Watergate,American Dynasty,l,l
+55,53,Worse Than Watergate,Big Lies,l,l
+56,48,Plan of Attack,The Great Unraveling,n,l
+56,52,Plan of Attack,American Dynasty,n,l
+57,52,The New Pearl Harbor,American Dynasty,l,l
+58,52,Bushwomen,American Dynasty,l,l
+59,48,The Bubble of American Supremacy,The Great Unraveling,l,l
+59,52,The Bubble of American Supremacy,American Dynasty,l,l
+61,52,The Politics of Truth,American Dynasty,l,l
+61,53,The Politics of Truth,Big Lies,l,l
+62,53,Fanatics and Fools,Big Lies,l,l
+63,26,Bushwhacked,The Price of Loyalty,l,l
+63,46,Bushwhacked,Stupid White Men,l,l
+63,47,Bushwhacked,The Best Democracy Money Can Buy,l,l
+63,48,Bushwhacked,The Great Unraveling,l,l
+63,52,Bushwhacked,American Dynasty,l,l
+63,53,Bushwhacked,Big Lies,l,l
+63,54,Bushwhacked,The Lies of George W. Bush,l,l
+63,55,Bushwhacked,Worse Than Watergate,l,l
+63,56,Bushwhacked,Plan of Attack,l,n
+63,58,Bushwhacked,Bushwomen,l,l
+63,60,Bushwhacked,Living History,l,l
+63,61,Bushwhacked,The Politics of Truth,l,l
+63,62,Bushwhacked,Fanatics and Fools,l,l
+64,48,Disarming Iraq,The Great Unraveling,l,l
+64,52,Disarming Iraq,American Dynasty,l,l
+65,48,Lies and the Lying Liars Who Tell Them,The Great Unraveling,l,l
+65,52,Lies and the Lying Liars Who Tell Them,American Dynasty,l,l
+65,53,Lies and the Lying Liars Who Tell Them,Big Lies,l,l
+65,63,Lies and the Lying Liars Who Tell Them,Bushwhacked,l,l
+66,52,MoveOn's 50 Ways to Love Your Country,American Dynasty,l,l
+66,63,MoveOn's 50 Ways to Love Your Country,Bushwhacked,l,l
+67,48,The Buying of the President 1504,The Great Unraveling,l,l
+67,52,The Buying of the President 1504,American Dynasty,l,l
+67,63,The Buying of the President 1504,Bushwhacked,l,l
+68,48,Perfectly Legal,The Great Unraveling,l,l
+68,52,Perfectly Legal,American Dynasty,l,l
+68,53,Perfectly Legal,Big Lies,l,l
+68,63,Perfectly Legal,Bushwhacked,l,l
+69,48,Hegemony or Survival,The Great Unraveling,l,l
+69,52,Hegemony or Survival,American Dynasty,l,l
+70,52,The Exception to the Rulers,American Dynasty,l,l
+71,52,Freethinkers,American Dynasty,l,l
+71,53,Freethinkers,Big Lies,l,l
+72,48,Had Enough?,The Great Unraveling,l,l
+72,53,Had Enough?,Big Lies,l,l
+73,53,"It's Still the Economy, Stupid!",Big Lies,l,l
+73,63,"It's Still the Economy, Stupid!",Bushwhacked,l,l
+74,48,What Liberal Media?,The Great Unraveling,l,l
+74,53,What Liberal Media?,Big Lies,l,l
+74,63,What Liberal Media?,Bushwhacked,l,l
+75,48,The Clinton Wars,The Great Unraveling,l,l
+75,53,The Clinton Wars,Big Lies,l,l
+75,63,The Clinton Wars,Bushwhacked,l,l
+76,53,Weapons of Mass Deception,Big Lies,l,l
+77,48,"Dude, Where's My Country?",The Great Unraveling,l,l
+77,53,"Dude, Where's My Country?",Big Lies,l,l
+77,63,"Dude, Where's My Country?",Bushwhacked,l,l
+78,48,Thieves in High Places,The Great Unraveling,l,l
+78,53,Thieves in High Places,Big Lies,l,l
+78,63,Thieves in High Places,Bushwhacked,l,l
+79,63,Shrub,Bushwhacked,l,l
