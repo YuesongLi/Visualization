@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>The representation of Books about US politics - filter2</title>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.4.6"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.layout.js?2.4.6"></script>
+    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.csv.js?2.4.6"></script>
+    <style>
+
+#tooltip {
+        color: white;
+        opacity: .9;
+        background: #333;
+        padding: 5px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 10;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+.group text {
+  font: 11px sans-serif;
+  pointer-events: none;
+}
+
+.group path {
+  stroke: #000;
+}
+
+path.chord {
+  stroke-width: .75;
+  fill-opacity: .75;
+  stroke: #000;
+  stroke-width: .5px;
+}
+chord path{
+  fill-opacity: .67;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+h1 {
+  font-weight: 400;
+}
+#note {
+  position: absolute;
+  margin-left: 720px;
+  margin-top: 0px;
+}
+    </style>
+    <div id = "note">
+    <h1> A Representation of Books about US politics - filtering2</h1>
+<i> Filtering: Only show node labels with lager Degree (the degree > 10) and the connections between these nodes.</i>
+<p> </p>
+<p> </p>
+<img src="img/legend.png" height="100" width="150"/>
+<p> <p><p> <p><p> <p><p> <p> </p></p> </p></p> </p></p> </p></p>
+
+<a href="allnode.html"> Go To Allnode graph: show all the node labels and the connections between these nodes.</a>
+<p> </p>
+<a href="filter.html"> Go To Filter1: Only show node labels with lager Degree (the degree > 20) and the nodes have connections with these nodes.</a>
+  </div>  
+    <script>
+
+// Chart dimensions.
+var w = 680,
+    h = 680,
+    //r1 = Math.min(w, h) / 2 - 4,
+    //r0 = r1 - 20,
+    r1 = h / 2;
+    r0 = r1 - 100;
+    format = d3.format(",.3r");
+
+// Square matrices, asynchronously loaded; credits is the transpose of debits.
+var Source = [];
+    Target = [];
+
+// The chord layout, for computing the angles of chords and groups.
+var layout = d3.layout.chord()
+    .sortGroups(d3.ascending)
+    //.sortSubgroups(d3.descending)
+    //.sortChords(d3.descending)
+    .padding(.01);
+
+// The color scale, for different categories of "worrisome" risk.
+/*var fill = d3.scale.ordinal()
+    .domain([0, 1, 2])
+    .range(["#066118", "#0874EF", "#EF7B08"]);*/
+
+// The arc generator, for the groups.
+
+// The chord generator (quadratic Bézier), for the chords.
+var chord = d3.svg.chord()
+    .radius(r0);
+
+// Add an SVG element for each diagram, and translate the origin to the center.
+var svg = d3.select("div#tooltip")
+    .data([Source])
+  .enter().append("div")
+    .style("display", "inline-block")
+    .style("width", w + "px")
+    .style("height", h + "px")
+  .append("svg:svg")
+    .attr("width", w)
+    .attr("height", h)
+  .append("svg:g")
+    .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+
+// Load our data file…
+d3.csv('data/data5.csv', function(data) {
+  var books = {},
+      array = [];
+  
+  // initialising source/target with source/target attributes.
+  data.forEach(function(d) {
+    d.Source = bookS(d.Source,d.SLabel,d.Sclass);
+    d.Target = bookT(d.Target,d.TLabel,d.Tclass);
+  });
+  // Initialize a square matrix of source and target.
+  for (var i = 0; i < 24; i++) {
+    Source[i] = [];
+    Target[i] = [];
+    for (var j = 0; j < 24; j++) {
+      Source[i][j] = 0;
+      Target[i][j] = 0;
+    }
+  }
+
+var book_name = [];
+var book_class = [];
+var book_index = [];
+var book_index_t = [];
+var c_s = [];
+var c_t = [];
+var n = 0;
+  // Populate the matrices, and initialising attributes arrays.
+  data.forEach(function(d) {
+    Source[d.Source.id][d.Target.id] = 1;
+    Source[d.Target.id][d.Source.id] = 1;
+    array[d.Source.id] = d.Source;
+    array[d.Target.id] = d.Target;
+    book_name[d.Source.id] = array[d.Source.id].name;
+    book_name[d.Target.id] = array[d.Target.id].name;
+    book_class[d.Source.id] = array[d.Source.id].classes;
+    book_class[d.Target.id] = array[d.Target.id].classes;
+    c_s[n] = array[d.Source.id].classes;
+    c_t[n] = array[d.Target.id].classes;
+    book_index[n] = array[d.Source.id].id;
+    book_index_t[n] = array[d.Target.id].id;
+    n ++;
+  });
+
+
+  svg.each(function(matrix, j) {
+    var svg = d3.select(this);
+
+    // Compute the chord layout.
+    layout.matrix(matrix);
+
+    // Add chords and groups
+    var chords=layout.chords();
+    var groups=layout.groups();
+    var innerRadius = w/2 * 0.7;
+    var outerRadius = innerRadius * 1.1;
+    var outer_arc = d3.svg.arc()
+      .innerRadius(innerRadius)
+      .outerRadius(outerRadius);
+      
+    //add groups
+    var color3 = d3.scale.category20();
+    var g_outer = svg.append("g")
+    g_outer.selectAll("path")
+      .data(groups)
+      .enter()
+      .append("path")
+      .style("fill", function(d) { return color3(book_class[d.index]); })
+      .style("stroke", function(d) { return color3(book_class[d.index]); })
+      .attr("d", outer_arc);
+    g_outer.selectAll("text")
+      .data(groups)
+      .enter()
+      .append("text")
+      .each( function(d,i) {
+        d.angles = (d.startAngle + d.endAngle) / 2;
+        d.name = book_name[i];
+      })
+      .attr("dy", ".35em")
+      .style("font-family", "helvetica, arial, sans-serif")
+      .style("font-size", "9px")
+      .attr("transform", function(d) {
+        return "rotate(" + (d.angles * 180 / Math.PI - 90) + ")" +
+        "translate(" + (r0 + 26) + ")" ;
+       })
+      .text(function(d) {
+        return d.name;
+      })
+      .on("mouseover", function(d,i){
+      d3.select("#tooltip")
+          .style("visibility", "visible")
+          .html(groupTip(d))
+          .style("top", function () { return (d3.event.pageY - 60)+"px"})
+          .style("left", function () { return (d3.event.pageX - 100)+"px";});
+        svg.selectAll(".chord path")
+          .filter(function(p) { return p.source.index != i && p.target.index != i; })
+          .transition()
+          .style("opacity", 0);
+    })
+    .on("mouseout", fade(1));
+      
+     
+    var inner_chord = d3.svg.chord()
+      .radius(innerRadius);
+      
+    //add chords
+    svg.append("g")
+      .attr("class", "chord")
+      .selectAll("path")
+      .data(chords)
+      .enter()
+      .append("path")
+      .attr("d", inner_chord)
+      .style("fill", function(d,i) {
+          //console.log(chords[i].source);
+          //console.log(chords[i].source.index);
+          return color3(book_class[chords[i].source.index]);
+      })
+      .style("opacity", 0.4)
+      .on("mouseover", function(d,i){
+      d3.select("#tooltip")
+          .style("visibility", "visible")
+          .html(chordTip(d))
+          .style("top", function () { return (d3.event.pageY - 60)+"px"})
+          .style("left", function () { return (d3.event.pageX - 100)+"px";});
+        svg.selectAll(".chord path")
+          .filter(function(p) { return p.source.index != i && p.target.index != i; })
+          .transition()
+          .style("opacity", 0.2);
+    })
+    .on("mouseout", fade(1));
+
+      
+});
+  // Memoize the source book‘s attributs.
+  function bookS(d,e,f) {
+    return books[d] || (books[d] = {
+      id:d,
+      name: e,
+      classes: f 
+    });
+  }
+  // Memoize the target book‘s attributs.
+  function bookT(d,e,f) {
+    return books[d] || (books[d] = {
+      id:d,
+      name: e,
+      classes: f
+    });
+  }
+//fade function
+function fade(opacity) {
+  return function(g, i) {
+    svg.selectAll(".chord path")
+        .filter(function(d) { return d.source.index != i && d.target.index != i; })
+      .transition()
+        .style("opacity", opacity);
+  };
+}
+//chord tiptext
+function chordTip (d) {
+            return "Chord Info:<br/>"
+              +  book_name[d.source.index] + " → " + book_name[d.target.index];
+          }
+  
+});
+//group tiptext
+function groupTip (d) {
+        return "Group Info(after filtering):<br/>"
+        +"The \""+d.name+"\" has "+ Math.round(d.value)+" degrees";;
+      }
+
+
+    </script>
+  </head>
+    <body>
+  
+  <div id="tooltip"></div>
+  
+  </body>
+</html>
