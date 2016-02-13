@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+
+.axis text{
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+/*.browser text {
+  text-anchor: end;
+}*/
+.tooltip {
+    position: absolute;
+    z-index: 9900000;
+    opacity: 1;
+    height: auto;
+    font-size: 10px;
+    filter: alpha(opacity=100);
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+}
+
+.browser:hover>path.area {
+  opacity:1;
+}
+.browser:hover>text {
+  fill:#990033;
+}
+	.Title {
+  font-size: 50px;
+  font-family:Impact;
+  opacity:0.8
+}
+	.subtitle {
+  font-size: 20px;
+  font-family:Impact;
+}
+.tabletext {
+  font-size: 15px;
+}
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+	background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+	background-color:#ffffff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:10px;
+	font-weight:bold;
+	padding:4px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+	background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+<body>
+
+<table width="100%">
+	<tr ><td colspan="5" height=30></td></tr>
+	<tr><td width=40><p></p></td><td rowspan="6" width=600><iframe id="Treemap" src="treemap.html" width="600" height="650" style="border:none" scrolling="no"></iframe></td>
+	<td></td>
+	<td align="left" class="Title" rowspan="2"><input size=17 width="20%" id="Year" style="border:none" class="Title" type="text"><button width=5 heigth=10 class="myButton" onclick="window.location.href='dashboard.html'">Overview</button>
+	<button width=5 heigth=10 class="myButton" onclick="window.location.href='useofE.html'">Use of Expenditure</button></td>
+	<td width=10></td></tr>
+	
+	<tr><td></td><td></td><td></td></tr>
+	<tr><td><p></p></td><td></td><td></td></tr>
+	<tr><td></td><td></td><td align="left">
+	<table><tr><td colspan="2"><div id="graph"></div></td></tr><tr><td width="48"></td><td width="532px"><div id="slider"></div></td></tr>
+	</table>
+	</td><td></td></tr>
+	<tr><td></td><td></td><td align="middle">
+	</td><td></td></tr>
+	<tr><td></td><td></td><td align="left"></td><td></td</tr>
+	<tr><td></td><td></td><td></td><td></td></tr>
+	</table>
+<table>
+<tr>
+<td></td>
+<td><table><tr><td></td></tr>
+<tr><td></td></tr></table></td>
+</tr>
+</table>
+
+
+
+
+
+
+<script src="//d3js.org/d3.v3.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+
+<script>
+var selection;
+$( "#Year" ).val("2004");
+//$("#Treemap")[0].contentWindow.drawTree("indus_2013_ca.json","change_sf","size_sf");
+//$("#Treemap")[0].contentWindow.myFunction();
+$(function() {
+    		$( "#slider" ).slider({
+      		value:1,
+      		min: 2004,
+      		max: 2013,
+      		step: 1,
+      		slide: function( event, ui ) {
+        		$( "#Year" ).val( ui.value );
+        		$("#Treemap")[0].contentWindow.myFunction(ui.value);
+        		
+      		},
+    	});
+    	//$( "#Treemap" ).val( $( "#slider" ).slider( "value" ));
+    	console.log($("#slider").slider("value"));
+	});
+
+//var transPara=$("#slider").slider("value");
+//$("iframe#Treemap").src("treemap.html?year="+transPara);
+var margin = {top: 20, right: 20, bottom: 30, left: 50},
+    width = 600 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
+
+var parseDate = d3.time.format("%Y").parse;
+//var formatPercent = d3.format();
+
+var x = d3.time.scale()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    //.domain ([0,387433])
+    .range([height, 0]);
+
+
+var color = d3.scale.category20();
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+    //.ticks(5);
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    //.tickFormat(formatPercent);
+
+var area = d3.svg.area()
+    .x(function(d) { return x(d.date); })
+    .y0(function(d) { return y(d.y0); })
+    .y1(function(d) { return y(d.y0 + d.y); });
+
+var stack = d3.layout.stack()
+    .values(function(d) { return d.values; });
+
+var svg = d3.select("div#graph")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+//$("#mySelect",document.frames('Treemap').document)
+ 
+ 
+ 
+
+/*selection=$("#Treemap").window();
+				console.log(selection);*/
+//var selection=$("#Treemap")[0].contentWindow.getselect();
+//console.log(selection);
+//if($("#Treemap")[0].contentWindow.myFunction(ui.value))
+
+d3.csv("data/river_total.csv", function(error, data) {
+      if (error) throw error;
+    
+    color.domain(d3.keys(data[0]).filter(function(key) { return key !== "date"; }));
+
+    data.forEach(function(d) {
+      
+      var year=d.date;
+    d.date = parseDate(d.date);
+
+  });
+
+
+
+
+  var browsers = stack(color.domain().map(function(name) {
+    return {
+      name: name,
+      values: data.map(function(d) {
+        //console.log(d)
+        return {date: d.date, y: d[name]/390000};
+      })
+    };
+  }));
+
+  x.domain(d3.extent(data, function(d) { return d.date; }));
+  //y.domain([0,387433]);
+    
+  var tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0.0);
+
+  
+  var browser = svg.selectAll(".browser")
+      .data(browsers)
+      .enter()
+      .append("g")
+      .attr("class", "browser");
+
+  browser.append("path")
+      .attr("class", "area")
+      .attr("d", function(d) { return area(d.values); })
+      .style("fill", function(d) { return color(d.name); })
+      .style("opacity",1)
+      .attr("transform","translate(5,0)")
+      .on("mouseover",function(d, i){console.log(d.values)
+            tooltip.html(d.name + "<br />")
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY + 20) + "px")
+            .style("opacity", 1);
+            tooltip.style("left", (d3.event.pageX) + "px")})
+
+        .on("mouseout",function(d, i){ 
+            tooltip.style("opacity", 0.0)});
+//console.log(d.value.date);
+  browser.append("text")
+      .datum(function(d) { 
+        //console.log(d);
+        //console.log(d.values.length);
+        return {name: d.name, value: d.values[d.values.length - 1]}; })
+      .attr("transform", function(d) { return "translate(" + x(d.value.date) + "," + y(d.value.y0 + d.value.y / 2) + ")"; })
+      .attr("x", -6)
+      .attr("dy", ".35em")
+     /* .text(function(d) { return d.name; })*/
+      
+
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(5," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis);
+});
+
+</script>
