@@ -1,0 +1,992 @@
+{"name": "expenditure", "description": "flare", "children": [ 
+ {"name": " 2003 ","description": " 2003 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 22},  {"name": " equipment", "description": " equipment ", "size": 20}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 14},  {"name": " equipment", "description": " equipment ", "size": 39}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 279},  {"name": " equipment", "description": " equipment ", "size": 251}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 246},  {"name": " equipment", "description": " equipment ", "size": 175}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 799},  {"name": " equipment", "description": " equipment ", "size": 452}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1308},  {"name": " equipment", "description": " equipment ", "size": 963}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 351},  {"name": " equipment", "description": " equipment ", "size": 758}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 321},  {"name": " equipment", "description": " equipment ", "size": 722}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9846},  {"name": " equipment", "description": " equipment ", "size": 9418}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7220},  {"name": " equipment", "description": " equipment ", "size": 6794}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6937},  {"name": " equipment", "description": " equipment ", "size": 6969}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3440},  {"name": " equipment", "description": " equipment ", "size": 4423}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2909},  {"name": " equipment", "description": " equipment ", "size": 2449}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3779},  {"name": " equipment", "description": " equipment ", "size": 2371}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2336},  {"name": " equipment", "description": " equipment ", "size": 1529}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2238},  {"name": " equipment", "description": " equipment ", "size": 3552}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2042},  {"name": " equipment", "description": " equipment ", "size": 2059}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2621},  {"name": " equipment", "description": " equipment ", "size": 6508}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 792},  {"name": " equipment", "description": " equipment ", "size": 1233}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1039},  {"name": " equipment", "description": " equipment ", "size": 1015}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 12891},  {"name": " equipment", "description": " equipment ", "size": 7161}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7949},  {"name": " equipment", "description": " equipment ", "size": 29140}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10998},  {"name": " equipment", "description": " equipment ", "size": 7506}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10715},  {"name": " equipment", "description": " equipment ", "size": 13142}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 290},  {"name": " equipment", "description": " equipment ", "size": 576}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 627},  {"name": " equipment", "description": " equipment ", "size": 2417}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8030},  {"name": " equipment", "description": " equipment ", "size": 4970}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2853},  {"name": " equipment", "description": " equipment ", "size": 8556}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 378},  {"name": " equipment", "description": " equipment ", "size": 286}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 414},  {"name": " equipment", "description": " equipment ", "size": 844}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1282},  {"name": " equipment", "description": " equipment ", "size": 1261}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1942},  {"name": " equipment", "description": " equipment ", "size": 2661}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 536},  {"name": " equipment", "description": " equipment ", "size": 1053}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 586},  {"name": " equipment", "description": " equipment ", "size": 1668}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1798},  {"name": " equipment", "description": " equipment ", "size": 3141}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2764},  {"name": " equipment", "description": " equipment ", "size": 6165}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 180},  {"name": " equipment", "description": " equipment ", "size": 169}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 287},  {"name": " equipment", "description": " equipment ", "size": 689}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 228},  {"name": " equipment", "description": " equipment ", "size": 374}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 348},  {"name": " equipment", "description": " equipment ", "size": 990}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 435},  {"name": " equipment", "description": " equipment ", "size": 903}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 611},  {"name": " equipment", "description": " equipment ", "size": 1369}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 397},  {"name": " equipment", "description": " equipment ", "size": 150}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 190},  {"name": " equipment", "description": " equipment ", "size": 385}] } 
+] } 
+
+]  } , 
+ {"name": " 2004 ","description": " 2004 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 49},  {"name": " equipment", "description": " equipment ", "size": 34}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 25},  {"name": " equipment", "description": " equipment ", "size": 56}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 353},  {"name": " equipment", "description": " equipment ", "size": 271}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 406},  {"name": " equipment", "description": " equipment ", "size": 311}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 955},  {"name": " equipment", "description": " equipment ", "size": 448}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1246},  {"name": " equipment", "description": " equipment ", "size": 1101}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 326},  {"name": " equipment", "description": " equipment ", "size": 837}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 393},  {"name": " equipment", "description": " equipment ", "size": 1183}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9467},  {"name": " equipment", "description": " equipment ", "size": 6892}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9556},  {"name": " equipment", "description": " equipment ", "size": 7830}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6546},  {"name": " equipment", "description": " equipment ", "size": 4485}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5435},  {"name": " equipment", "description": " equipment ", "size": 5179}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2921},  {"name": " equipment", "description": " equipment ", "size": 2407}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4121},  {"name": " equipment", "description": " equipment ", "size": 2651}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1833},  {"name": " equipment", "description": " equipment ", "size": 1928}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2048},  {"name": " equipment", "description": " equipment ", "size": 3444}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2283},  {"name": " equipment", "description": " equipment ", "size": 1894}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3688},  {"name": " equipment", "description": " equipment ", "size": 6340}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 778},  {"name": " equipment", "description": " equipment ", "size": 695}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1547},  {"name": " equipment", "description": " equipment ", "size": 1471}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 11761},  {"name": " equipment", "description": " equipment ", "size": 6216}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10035},  {"name": " equipment", "description": " equipment ", "size": 26474}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 11744},  {"name": " equipment", "description": " equipment ", "size": 7156}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 11637},  {"name": " equipment", "description": " equipment ", "size": 12573}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 377},  {"name": " equipment", "description": " equipment ", "size": 532}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 582},  {"name": " equipment", "description": " equipment ", "size": 1750}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7404},  {"name": " equipment", "description": " equipment ", "size": 4700}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3197},  {"name": " equipment", "description": " equipment ", "size": 7295}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 473},  {"name": " equipment", "description": " equipment ", "size": 243}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 760},  {"name": " equipment", "description": " equipment ", "size": 874}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1644},  {"name": " equipment", "description": " equipment ", "size": 983}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1512},  {"name": " equipment", "description": " equipment ", "size": 1749}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 573},  {"name": " equipment", "description": " equipment ", "size": 948}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 714},  {"name": " equipment", "description": " equipment ", "size": 1399}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2360},  {"name": " equipment", "description": " equipment ", "size": 3649}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3809},  {"name": " equipment", "description": " equipment ", "size": 9182}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 189},  {"name": " equipment", "description": " equipment ", "size": 203}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 261},  {"name": " equipment", "description": " equipment ", "size": 847}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 334},  {"name": " equipment", "description": " equipment ", "size": 339}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 434},  {"name": " equipment", "description": " equipment ", "size": 863}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 483},  {"name": " equipment", "description": " equipment ", "size": 803}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 781},  {"name": " equipment", "description": " equipment ", "size": 1457}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 351},  {"name": " equipment", "description": " equipment ", "size": 101}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 261},  {"name": " equipment", "description": " equipment ", "size": 245}] } 
+] } 
+
+]  } , 
+ {"name": " 2005 ","description": " 2005 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 49},  {"name": " equipment", "description": " equipment ", "size": 22}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 31},  {"name": " equipment", "description": " equipment ", "size": 54}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 408},  {"name": " equipment", "description": " equipment ", "size": 285}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 489},  {"name": " equipment", "description": " equipment ", "size": 407}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 889},  {"name": " equipment", "description": " equipment ", "size": 434}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1524},  {"name": " equipment", "description": " equipment ", "size": 1017}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 315},  {"name": " equipment", "description": " equipment ", "size": 547}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 393},  {"name": " equipment", "description": " equipment ", "size": 1194}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9483},  {"name": " equipment", "description": " equipment ", "size": 7108}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8332},  {"name": " equipment", "description": " equipment ", "size": 7599}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6392},  {"name": " equipment", "description": " equipment ", "size": 4890}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4693},  {"name": " equipment", "description": " equipment ", "size": 4808}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3091},  {"name": " equipment", "description": " equipment ", "size": 2218}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3640},  {"name": " equipment", "description": " equipment ", "size": 2791}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1683},  {"name": " equipment", "description": " equipment ", "size": 1286}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1840},  {"name": " equipment", "description": " equipment ", "size": 3027}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2500},  {"name": " equipment", "description": " equipment ", "size": 1905}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3858},  {"name": " equipment", "description": " equipment ", "size": 6637}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 870},  {"name": " equipment", "description": " equipment ", "size": 760}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1556},  {"name": " equipment", "description": " equipment ", "size": 1759}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9762},  {"name": " equipment", "description": " equipment ", "size": 5548}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7471},  {"name": " equipment", "description": " equipment ", "size": 29646}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 13302},  {"name": " equipment", "description": " equipment ", "size": 6608}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 12164},  {"name": " equipment", "description": " equipment ", "size": 12169}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 420},  {"name": " equipment", "description": " equipment ", "size": 609}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 494},  {"name": " equipment", "description": " equipment ", "size": 1589}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8622},  {"name": " equipment", "description": " equipment ", "size": 5300}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4301},  {"name": " equipment", "description": " equipment ", "size": 8749}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 204},  {"name": " equipment", "description": " equipment ", "size": 191}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 346},  {"name": " equipment", "description": " equipment ", "size": 361}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1158},  {"name": " equipment", "description": " equipment ", "size": 1087}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1326},  {"name": " equipment", "description": " equipment ", "size": 2028}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 714},  {"name": " equipment", "description": " equipment ", "size": 919}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 493},  {"name": " equipment", "description": " equipment ", "size": 1534}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2394},  {"name": " equipment", "description": " equipment ", "size": 3497}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3635},  {"name": " equipment", "description": " equipment ", "size": 10414}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 308},  {"name": " equipment", "description": " equipment ", "size": 219}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 206},  {"name": " equipment", "description": " equipment ", "size": 652}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 351},  {"name": " equipment", "description": " equipment ", "size": 444}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 567},  {"name": " equipment", "description": " equipment ", "size": 1412}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 550},  {"name": " equipment", "description": " equipment ", "size": 659}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 539},  {"name": " equipment", "description": " equipment ", "size": 1372}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 267},  {"name": " equipment", "description": " equipment ", "size": 130}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 202},  {"name": " equipment", "description": " equipment ", "size": 212}] } 
+] } 
+
+]  } , 
+ {"name": " 2006 ","description": " 2006 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 37},  {"name": " equipment", "description": " equipment ", "size": 14}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 12},  {"name": " equipment", "description": " equipment ", "size": 34}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 440},  {"name": " equipment", "description": " equipment ", "size": 245}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 589},  {"name": " equipment", "description": " equipment ", "size": 659}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1031},  {"name": " equipment", "description": " equipment ", "size": 438}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1304},  {"name": " equipment", "description": " equipment ", "size": 1060}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 368},  {"name": " equipment", "description": " equipment ", "size": 631}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 332},  {"name": " equipment", "description": " equipment ", "size": 1189}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9725},  {"name": " equipment", "description": " equipment ", "size": 7185}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9970},  {"name": " equipment", "description": " equipment ", "size": 8028}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6397},  {"name": " equipment", "description": " equipment ", "size": 4906}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5323},  {"name": " equipment", "description": " equipment ", "size": 5077}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3328},  {"name": " equipment", "description": " equipment ", "size": 2279}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4647},  {"name": " equipment", "description": " equipment ", "size": 2952}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1490},  {"name": " equipment", "description": " equipment ", "size": 1214}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2199},  {"name": " equipment", "description": " equipment ", "size": 3108}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2298},  {"name": " equipment", "description": " equipment ", "size": 1540}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3895},  {"name": " equipment", "description": " equipment ", "size": 7034}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 892},  {"name": " equipment", "description": " equipment ", "size": 684}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1712},  {"name": " equipment", "description": " equipment ", "size": 1704}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8803},  {"name": " equipment", "description": " equipment ", "size": 5196}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 11943},  {"name": " equipment", "description": " equipment ", "size": 36738}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 14354},  {"name": " equipment", "description": " equipment ", "size": 6427}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 14269},  {"name": " equipment", "description": " equipment ", "size": 13242}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 596},  {"name": " equipment", "description": " equipment ", "size": 645}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 544},  {"name": " equipment", "description": " equipment ", "size": 1462}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7043},  {"name": " equipment", "description": " equipment ", "size": 5169}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5013},  {"name": " equipment", "description": " equipment ", "size": 8633}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 464},  {"name": " equipment", "description": " equipment ", "size": 197}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 357},  {"name": " equipment", "description": " equipment ", "size": 417}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 950},  {"name": " equipment", "description": " equipment ", "size": 1276}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1614},  {"name": " equipment", "description": " equipment ", "size": 2691}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 679},  {"name": " equipment", "description": " equipment ", "size": 958}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 521},  {"name": " equipment", "description": " equipment ", "size": 1359}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2716},  {"name": " equipment", "description": " equipment ", "size": 3290}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3475},  {"name": " equipment", "description": " equipment ", "size": 9557}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 255},  {"name": " equipment", "description": " equipment ", "size": 276}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 183},  {"name": " equipment", "description": " equipment ", "size": 701}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 399},  {"name": " equipment", "description": " equipment ", "size": 534}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 513},  {"name": " equipment", "description": " equipment ", "size": 1189}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1256},  {"name": " equipment", "description": " equipment ", "size": 698}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 724},  {"name": " equipment", "description": " equipment ", "size": 1582}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 210},  {"name": " equipment", "description": " equipment ", "size": 146}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 169},  {"name": " equipment", "description": " equipment ", "size": 198}] } 
+] } 
+
+]  } , 
+ {"name": " 2007 ","description": " 2007 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 38},  {"name": " equipment", "description": " equipment ", "size": 13}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 29},  {"name": " equipment", "description": " equipment ", "size": 30}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 548},  {"name": " equipment", "description": " equipment ", "size": 677}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 520},  {"name": " equipment", "description": " equipment ", "size": 823}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 935},  {"name": " equipment", "description": " equipment ", "size": 440}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1484},  {"name": " equipment", "description": " equipment ", "size": 1064}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 390},  {"name": " equipment", "description": " equipment ", "size": 798}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 426},  {"name": " equipment", "description": " equipment ", "size": 1322}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10120},  {"name": " equipment", "description": " equipment ", "size": 7579}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10469},  {"name": " equipment", "description": " equipment ", "size": 8078}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6015},  {"name": " equipment", "description": " equipment ", "size": 5086}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5821},  {"name": " equipment", "description": " equipment ", "size": 5101}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4105},  {"name": " equipment", "description": " equipment ", "size": 2494}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4648},  {"name": " equipment", "description": " equipment ", "size": 2977}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1712},  {"name": " equipment", "description": " equipment ", "size": 1362}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2868},  {"name": " equipment", "description": " equipment ", "size": 3251}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2958},  {"name": " equipment", "description": " equipment ", "size": 1758}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4890},  {"name": " equipment", "description": " equipment ", "size": 7518}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1096},  {"name": " equipment", "description": " equipment ", "size": 689}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1541},  {"name": " equipment", "description": " equipment ", "size": 1792}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7485},  {"name": " equipment", "description": " equipment ", "size": 5181}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10548},  {"name": " equipment", "description": " equipment ", "size": 40550}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 17040},  {"name": " equipment", "description": " equipment ", "size": 6372}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 15588},  {"name": " equipment", "description": " equipment ", "size": 13528}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 693},  {"name": " equipment", "description": " equipment ", "size": 816}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 739},  {"name": " equipment", "description": " equipment ", "size": 1225}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6724},  {"name": " equipment", "description": " equipment ", "size": 4583}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5202},  {"name": " equipment", "description": " equipment ", "size": 8406}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 460},  {"name": " equipment", "description": " equipment ", "size": 221}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 644},  {"name": " equipment", "description": " equipment ", "size": 741}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1135},  {"name": " equipment", "description": " equipment ", "size": 1000}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1726},  {"name": " equipment", "description": " equipment ", "size": 2390}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 685},  {"name": " equipment", "description": " equipment ", "size": 955}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 610},  {"name": " equipment", "description": " equipment ", "size": 1388}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2799},  {"name": " equipment", "description": " equipment ", "size": 4112}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4005},  {"name": " equipment", "description": " equipment ", "size": 10479}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 261},  {"name": " equipment", "description": " equipment ", "size": 271}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 250},  {"name": " equipment", "description": " equipment ", "size": 910}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 481},  {"name": " equipment", "description": " equipment ", "size": 368}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 716},  {"name": " equipment", "description": " equipment ", "size": 1087}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 607},  {"name": " equipment", "description": " equipment ", "size": 727}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 874},  {"name": " equipment", "description": " equipment ", "size": 1738}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 217},  {"name": " equipment", "description": " equipment ", "size": 95}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 189},  {"name": " equipment", "description": " equipment ", "size": 174}] } 
+] } 
+
+]  } , 
+ {"name": " 2008 ","description": " 2008 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 61},  {"name": " equipment", "description": " equipment ", "size": 12}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 68},  {"name": " equipment", "description": " equipment ", "size": 91}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 780},  {"name": " equipment", "description": " equipment ", "size": 1045}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 703},  {"name": " equipment", "description": " equipment ", "size": 739}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1175},  {"name": " equipment", "description": " equipment ", "size": 629}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2277},  {"name": " equipment", "description": " equipment ", "size": 1459}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 380},  {"name": " equipment", "description": " equipment ", "size": 522}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 621},  {"name": " equipment", "description": " equipment ", "size": 1260}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9502},  {"name": " equipment", "description": " equipment ", "size": 6606}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10502},  {"name": " equipment", "description": " equipment ", "size": 9181}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6062},  {"name": " equipment", "description": " equipment ", "size": 4656}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5705},  {"name": " equipment", "description": " equipment ", "size": 5794}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3439},  {"name": " equipment", "description": " equipment ", "size": 1950}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4797},  {"name": " equipment", "description": " equipment ", "size": 3388}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2105},  {"name": " equipment", "description": " equipment ", "size": 1201}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3259},  {"name": " equipment", "description": " equipment ", "size": 3858}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2597},  {"name": " equipment", "description": " equipment ", "size": 1567}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6967},  {"name": " equipment", "description": " equipment ", "size": 7260}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1223},  {"name": " equipment", "description": " equipment ", "size": 575}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1752},  {"name": " equipment", "description": " equipment ", "size": 1776}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7548},  {"name": " equipment", "description": " equipment ", "size": 5375}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 12824},  {"name": " equipment", "description": " equipment ", "size": 56982}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 15300},  {"name": " equipment", "description": " equipment ", "size": 5640}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 15396},  {"name": " equipment", "description": " equipment ", "size": 13762}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 619},  {"name": " equipment", "description": " equipment ", "size": 730}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 702},  {"name": " equipment", "description": " equipment ", "size": 2108}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7227},  {"name": " equipment", "description": " equipment ", "size": 4126}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5499},  {"name": " equipment", "description": " equipment ", "size": 10164}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 593},  {"name": " equipment", "description": " equipment ", "size": 289}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 807},  {"name": " equipment", "description": " equipment ", "size": 1022}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1218},  {"name": " equipment", "description": " equipment ", "size": 1174}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2032},  {"name": " equipment", "description": " equipment ", "size": 2711}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 783},  {"name": " equipment", "description": " equipment ", "size": 951}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 688},  {"name": " equipment", "description": " equipment ", "size": 1910}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3025},  {"name": " equipment", "description": " equipment ", "size": 3416}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4912},  {"name": " equipment", "description": " equipment ", "size": 12904}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 272},  {"name": " equipment", "description": " equipment ", "size": 230}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 288},  {"name": " equipment", "description": " equipment ", "size": 884}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 456},  {"name": " equipment", "description": " equipment ", "size": 347}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 789},  {"name": " equipment", "description": " equipment ", "size": 2488}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 808},  {"name": " equipment", "description": " equipment ", "size": 883}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1012},  {"name": " equipment", "description": " equipment ", "size": 1671}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 298},  {"name": " equipment", "description": " equipment ", "size": 125}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 783},  {"name": " equipment", "description": " equipment ", "size": 737}] } 
+] } 
+
+]  } , 
+ {"name": " 2009 ","description": " 2009 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 41},  {"name": " equipment", "description": " equipment ", "size": 20}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 65},  {"name": " equipment", "description": " equipment ", "size": 36}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1397},  {"name": " equipment", "description": " equipment ", "size": 604}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 561},  {"name": " equipment", "description": " equipment ", "size": 485}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1165},  {"name": " equipment", "description": " equipment ", "size": 348}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2562},  {"name": " equipment", "description": " equipment ", "size": 1595}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 408},  {"name": " equipment", "description": " equipment ", "size": 515}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 268},  {"name": " equipment", "description": " equipment ", "size": 936}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9037},  {"name": " equipment", "description": " equipment ", "size": 5031}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9348},  {"name": " equipment", "description": " equipment ", "size": 6465}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5873},  {"name": " equipment", "description": " equipment ", "size": 3508}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5142},  {"name": " equipment", "description": " equipment ", "size": 3982}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3163},  {"name": " equipment", "description": " equipment ", "size": 1523}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4206},  {"name": " equipment", "description": " equipment ", "size": 2484}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1909},  {"name": " equipment", "description": " equipment ", "size": 1113}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3900},  {"name": " equipment", "description": " equipment ", "size": 2682}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2724},  {"name": " equipment", "description": " equipment ", "size": 1342}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5546},  {"name": " equipment", "description": " equipment ", "size": 5230}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1204},  {"name": " equipment", "description": " equipment ", "size": 518}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1497},  {"name": " equipment", "description": " equipment ", "size": 1408}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7774},  {"name": " equipment", "description": " equipment ", "size": 6090}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 11229},  {"name": " equipment", "description": " equipment ", "size": 41287}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 15200},  {"name": " equipment", "description": " equipment ", "size": 5520}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 15254},  {"name": " equipment", "description": " equipment ", "size": 10714}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 726},  {"name": " equipment", "description": " equipment ", "size": 651}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 660},  {"name": " equipment", "description": " equipment ", "size": 1700}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6505},  {"name": " equipment", "description": " equipment ", "size": 4164}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4357},  {"name": " equipment", "description": " equipment ", "size": 6960}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 654},  {"name": " equipment", "description": " equipment ", "size": 301}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1322},  {"name": " equipment", "description": " equipment ", "size": 775}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1389},  {"name": " equipment", "description": " equipment ", "size": 1024}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1992},  {"name": " equipment", "description": " equipment ", "size": 1908}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 865},  {"name": " equipment", "description": " equipment ", "size": 1016}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 892},  {"name": " equipment", "description": " equipment ", "size": 1538}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3686},  {"name": " equipment", "description": " equipment ", "size": 3430}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4478},  {"name": " equipment", "description": " equipment ", "size": 10016}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 350},  {"name": " equipment", "description": " equipment ", "size": 150}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 272},  {"name": " equipment", "description": " equipment ", "size": 679}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 503},  {"name": " equipment", "description": " equipment ", "size": 434}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 684},  {"name": " equipment", "description": " equipment ", "size": 848}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 611},  {"name": " equipment", "description": " equipment ", "size": 700}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1232},  {"name": " equipment", "description": " equipment ", "size": 1434}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 373},  {"name": " equipment", "description": " equipment ", "size": 157}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 855},  {"name": " equipment", "description": " equipment ", "size": 510}] } 
+] } 
+
+]  } , 
+ {"name": " 2010 ","description": " 2010 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 39},  {"name": " equipment", "description": " equipment ", "size": 20}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 64},  {"name": " equipment", "description": " equipment ", "size": 30}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 795},  {"name": " equipment", "description": " equipment ", "size": 408}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 542},  {"name": " equipment", "description": " equipment ", "size": 502}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1300},  {"name": " equipment", "description": " equipment ", "size": 394}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2622},  {"name": " equipment", "description": " equipment ", "size": 1678}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 327},  {"name": " equipment", "description": " equipment ", "size": 469}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 344},  {"name": " equipment", "description": " equipment ", "size": 942}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10208},  {"name": " equipment", "description": " equipment ", "size": 5508}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8700},  {"name": " equipment", "description": " equipment ", "size": 6425}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6632},  {"name": " equipment", "description": " equipment ", "size": 3541}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4573},  {"name": " equipment", "description": " equipment ", "size": 4201}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3576},  {"name": " equipment", "description": " equipment ", "size": 1967}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4127},  {"name": " equipment", "description": " equipment ", "size": 2224}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1754},  {"name": " equipment", "description": " equipment ", "size": 1141}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2828},  {"name": " equipment", "description": " equipment ", "size": 3185}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3773},  {"name": " equipment", "description": " equipment ", "size": 1634}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5299},  {"name": " equipment", "description": " equipment ", "size": 5944}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1260},  {"name": " equipment", "description": " equipment ", "size": 540}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1789},  {"name": " equipment", "description": " equipment ", "size": 1313}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7761},  {"name": " equipment", "description": " equipment ", "size": 5609}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9956},  {"name": " equipment", "description": " equipment ", "size": 47961}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 16428},  {"name": " equipment", "description": " equipment ", "size": 5598}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 14926},  {"name": " equipment", "description": " equipment ", "size": 11197}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 693},  {"name": " equipment", "description": " equipment ", "size": 513}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 680},  {"name": " equipment", "description": " equipment ", "size": 1070}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6877},  {"name": " equipment", "description": " equipment ", "size": 3743}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4736},  {"name": " equipment", "description": " equipment ", "size": 7343}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 792},  {"name": " equipment", "description": " equipment ", "size": 362}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 804},  {"name": " equipment", "description": " equipment ", "size": 1190}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1441},  {"name": " equipment", "description": " equipment ", "size": 892}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2203},  {"name": " equipment", "description": " equipment ", "size": 1980}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 877},  {"name": " equipment", "description": " equipment ", "size": 1020}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 682},  {"name": " equipment", "description": " equipment ", "size": 1822}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3714},  {"name": " equipment", "description": " equipment ", "size": 4125}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4858},  {"name": " equipment", "description": " equipment ", "size": 10262}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 325},  {"name": " equipment", "description": " equipment ", "size": 177}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 260},  {"name": " equipment", "description": " equipment ", "size": 781}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 421},  {"name": " equipment", "description": " equipment ", "size": 406}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 553},  {"name": " equipment", "description": " equipment ", "size": 861}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 715},  {"name": " equipment", "description": " equipment ", "size": 712}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1162},  {"name": " equipment", "description": " equipment ", "size": 1240}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 401},  {"name": " equipment", "description": " equipment ", "size": 415}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 480},  {"name": " equipment", "description": " equipment ", "size": 326}] } 
+] } 
+
+]  } , 
+ {"name": " 2011 ","description": " 2011 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 37},  {"name": " equipment", "description": " equipment ", "size": 13}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 55},  {"name": " equipment", "description": " equipment ", "size": 54}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 938},  {"name": " equipment", "description": " equipment ", "size": 412}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 940},  {"name": " equipment", "description": " equipment ", "size": 809}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1489},  {"name": " equipment", "description": " equipment ", "size": 504}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2666},  {"name": " equipment", "description": " equipment ", "size": 1662}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 453},  {"name": " equipment", "description": " equipment ", "size": 499}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 411},  {"name": " equipment", "description": " equipment ", "size": 677}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10492},  {"name": " equipment", "description": " equipment ", "size": 6071}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10107},  {"name": " equipment", "description": " equipment ", "size": 8051}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7063},  {"name": " equipment", "description": " equipment ", "size": 4144}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6033},  {"name": " equipment", "description": " equipment ", "size": 5263}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3429},  {"name": " equipment", "description": " equipment ", "size": 1927}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4075},  {"name": " equipment", "description": " equipment ", "size": 2788}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1959},  {"name": " equipment", "description": " equipment ", "size": 1223}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3356},  {"name": " equipment", "description": " equipment ", "size": 4043}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3415},  {"name": " equipment", "description": " equipment ", "size": 1434}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6466},  {"name": " equipment", "description": " equipment ", "size": 6058}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1403},  {"name": " equipment", "description": " equipment ", "size": 593}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1841},  {"name": " equipment", "description": " equipment ", "size": 1672}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8576},  {"name": " equipment", "description": " equipment ", "size": 6085}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10856},  {"name": " equipment", "description": " equipment ", "size": 54985}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 17329},  {"name": " equipment", "description": " equipment ", "size": 5507}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 15748},  {"name": " equipment", "description": " equipment ", "size": 11012}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 759},  {"name": " equipment", "description": " equipment ", "size": 481}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 682},  {"name": " equipment", "description": " equipment ", "size": 835}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8097},  {"name": " equipment", "description": " equipment ", "size": 4214}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5228},  {"name": " equipment", "description": " equipment ", "size": 7546}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 785},  {"name": " equipment", "description": " equipment ", "size": 317}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1740},  {"name": " equipment", "description": " equipment ", "size": 819}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1830},  {"name": " equipment", "description": " equipment ", "size": 945}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2429},  {"name": " equipment", "description": " equipment ", "size": 2663}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1076},  {"name": " equipment", "description": " equipment ", "size": 1012}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 854},  {"name": " equipment", "description": " equipment ", "size": 1817}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4488},  {"name": " equipment", "description": " equipment ", "size": 4022}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6150},  {"name": " equipment", "description": " equipment ", "size": 11257}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 450},  {"name": " equipment", "description": " equipment ", "size": 227}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 318},  {"name": " equipment", "description": " equipment ", "size": 818}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 578},  {"name": " equipment", "description": " equipment ", "size": 451}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 790},  {"name": " equipment", "description": " equipment ", "size": 1133}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 658},  {"name": " equipment", "description": " equipment ", "size": 752}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 892},  {"name": " equipment", "description": " equipment ", "size": 1327}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 424},  {"name": " equipment", "description": " equipment ", "size": 157}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 694},  {"name": " equipment", "description": " equipment ", "size": 256}] } 
+] } 
+
+]  } , 
+ {"name": " 2012 ","description": " 2012 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 0},  {"name": " equipment", "description": " equipment ", "size": 0}] } 
+] } 
+
+]  } , 
+ {"name": " 2013 ","description": " 2013 ", "children": [ 
+  {"name": " agricultural", "description": " Forestry, fishing, and agricultural services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 41},  {"name": " equipment", "description": " equipment ", "size": 17}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 54},  {"name": " equipment", "description": " equipment ", "size": 42}] } 
+] } 
+, 
+  {"name": " Mining", "description": " Mining ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1173},  {"name": " equipment", "description": " equipment ", "size": 455}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1063},  {"name": " equipment", "description": " equipment ", "size": 983}] } 
+] } 
+, 
+  {"name": " Utilities", "description": " Utilities ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1540},  {"name": " equipment", "description": " equipment ", "size": 719}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3470},  {"name": " equipment", "description": " equipment ", "size": 2273}] } 
+] } 
+, 
+  {"name": " Construction", "description": " Construction ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 609},  {"name": " equipment", "description": " equipment ", "size": 640}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 500},  {"name": " equipment", "description": " equipment ", "size": 932}] } 
+] } 
+, 
+  {"name": " Manufacturing", "description": " Manufacturing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 10438},  {"name": " equipment", "description": " equipment ", "size": 6120}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 12091},  {"name": " equipment", "description": " equipment ", "size": 8440}] } 
+] } 
+, 
+  {"name": " Durable goods ", "description": " Durable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6510},  {"name": " equipment", "description": " equipment ", "size": 3907}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7022},  {"name": " equipment", "description": " equipment ", "size": 5827}] } 
+] } 
+, 
+  {"name": " Nondurable goods", "description": " Nondurable goods industries ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 3928},  {"name": " equipment", "description": " equipment ", "size": 2213}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5070},  {"name": " equipment", "description": " equipment ", "size": 2612}] } 
+] } 
+, 
+  {"name": " Wholesale", "description": " Wholesale trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2367},  {"name": " equipment", "description": " equipment ", "size": 1673}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 4031},  {"name": " equipment", "description": " equipment ", "size": 3735}] } 
+] } 
+, 
+  {"name": " Retail", "description": " Retail trade ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5260},  {"name": " equipment", "description": " equipment ", "size": 1551}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 8289},  {"name": " equipment", "description": " equipment ", "size": 7101}] } 
+] } 
+, 
+  {"name": " Transportation", "description": " Transportation and warehousing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1660},  {"name": " equipment", "description": " equipment ", "size": 655}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2323},  {"name": " equipment", "description": " equipment ", "size": 1574}] } 
+] } 
+, 
+  {"name": " Information", "description": " Information ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9620},  {"name": " equipment", "description": " equipment ", "size": 6633}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 14233},  {"name": " equipment", "description": " equipment ", "size": 55226}] } 
+] } 
+, 
+  {"name": " Insurance", "description": " Finance and insurance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 22404},  {"name": " equipment", "description": " equipment ", "size": 6186}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 20403},  {"name": " equipment", "description": " equipment ", "size": 11206}] } 
+] } 
+, 
+  {"name": " Real estate", "description": " Real estate and rental and leasing ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 703},  {"name": " equipment", "description": " equipment ", "size": 508}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1101},  {"name": " equipment", "description": " equipment ", "size": 1265}] } 
+] } 
+, 
+  {"name": " scientific", "description": " Professional, scientific, and technical services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 9472},  {"name": " equipment", "description": " equipment ", "size": 5172}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 6348},  {"name": " equipment", "description": " equipment ", "size": 8780}] } 
+] } 
+, 
+  {"name": " Management", "description": " Management of companies and enterprises ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1059},  {"name": " equipment", "description": " equipment ", "size": 393}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2140},  {"name": " equipment", "description": " equipment ", "size": 887}] } 
+] } 
+, 
+  {"name": " Administrative", "description": " Administrative and support and waste management ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1996},  {"name": " equipment", "description": " equipment ", "size": 1020}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 2761},  {"name": " equipment", "description": " equipment ", "size": 2578}] } 
+] } 
+, 
+  {"name": " Educational", "description": " Educational services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1328},  {"name": " equipment", "description": " equipment ", "size": 1290}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 866},  {"name": " equipment", "description": " equipment ", "size": 1728}] } 
+] } 
+, 
+  {"name": " Health care", "description": " Health care and social assistance ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 5645},  {"name": " equipment", "description": " equipment ", "size": 4504}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 7043},  {"name": " equipment", "description": " equipment ", "size": 11050}] } 
+] } 
+, 
+  {"name": " Arts", "description": " Arts, entertainment, and recreation ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 532},  {"name": " equipment", "description": " equipment ", "size": 380}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 436},  {"name": " equipment", "description": " equipment ", "size": 914}] } 
+] } 
+, 
+  {"name": " Accommodation", "description": " Accommodation and food services ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 1066},  {"name": " equipment", "description": " equipment ", "size": 494}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 917},  {"name": " equipment", "description": " equipment ", "size": 2506}] } 
+] } 
+, 
+  {"name": " Other services", "description": " Other services (except public administration) ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 988},  {"name": " equipment", "description": " equipment ", "size": 853}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 989},  {"name": " equipment", "description": " equipment ", "size": 1221}] } 
+] } 
+, 
+  {"name": " Other industries", "description": " Industries not elsewhere classified ", "children": [   {"name": " non capitalized", "description": " non capitalized ", "children": [   {"name": " software", "description": " software ", "size": 514},  {"name": " equipment", "description": " equipment ", "size": 303}] }, 
+  {"name": " capitalized", "description": " capitalized ", "children": [   {"name": " software", "description": " software ", "size": 949},  {"name": " equipment", "description": " equipment ", "size": 453}] } 
+] } 
+
+]  } 
+] } 
