@@ -1,0 +1,80 @@
+Source,Target,SLabel,TLabel,Sclass,Tclass
+2,0,A National Party No More,Losing Bin Laden,c,c
+3,0,Bush Country,Losing Bin Laden,c,c
+3,2,Bush Country,A National Party No More,c,c
+4,0,Dereliction of Duty,Losing Bin Laden,c,c
+4,1,Dereliction of Duty,Why America Slept,c,n
+4,2,Dereliction of Duty,A National Party No More,c,c
+5,0,Legacy,Losing Bin Laden,c,c
+5,2,Legacy,A National Party No More,c,c
+5,3,Legacy,Bush Country,c,c
+5,4,Legacy,Dereliction of Duty,c,c
+6,0,Off with Their Heads,Losing Bin Laden,c,c
+6,1,Off with Their Heads,Why America Slept,c,n
+6,2,Off with Their Heads,A National Party No More,c,c
+6,3,Off with Their Heads,Bush Country,c,c
+6,4,Off with Their Heads,Dereliction of Duty,c,c
+6,5,Off with Their Heads,Legacy,c,c
+7,0,Persecution,Losing Bin Laden,c,c
+7,2,Persecution,A National Party No More,c,c
+7,5,Persecution,Legacy,c,c
+7,6,Persecution,Off with Their Heads,c,c
+9,8,"House of Bush, House of Saud",The Price of Loyalty,l,l
+10,2,Deliver Us from Evil,A National Party No More,c,c
+10,6,Deliver Us from Evil,Off with Their Heads,c,c
+10,7,Deliver Us from Evil,Persecution,c,c
+11,3,Arrogance,Bush Country,c,c
+11,5,Arrogance,Legacy,c,c
+11,6,Arrogance,Off with Their Heads,c,c
+11,7,Arrogance,Persecution,c,c
+11,10,Arrogance,Deliver Us from Evil,c,c
+12,8,Rise of the Vulcans,The Price of Loyalty,c,l
+13,8,The Great Unraveling,The Price of Loyalty,l,l
+15,13,American Dynasty,The Great Unraveling,l,l
+15,14,American Dynasty,Against All Enemies,l,l
+16,8,Big Lies,The Price of Loyalty,l,l
+16,9,Big Lies,"House of Bush, House of Saud",l,l
+16,13,Big Lies,The Great Unraveling,l,l
+16,14,Big Lies,Against All Enemies,l,l
+16,15,Big Lies,American Dynasty,l,l
+17,8,The Lies of George W. Bush,The Price of Loyalty,l,l
+17,9,The Lies of George W. Bush,"House of Bush, House of Saud",l,l
+17,13,The Lies of George W. Bush,The Great Unraveling,l,l
+17,14,The Lies of George W. Bush,Against All Enemies,l,l
+17,15,The Lies of George W. Bush,American Dynasty,l,l
+17,16,The Lies of George W. Bush,Big Lies,l,l
+18,8,Worse Than Watergate,The Price of Loyalty,l,l
+18,9,Worse Than Watergate,"House of Bush, House of Saud",l,l
+18,14,Worse Than Watergate,Against All Enemies,l,l
+18,15,Worse Than Watergate,American Dynasty,l,l
+18,16,Worse Than Watergate,Big Lies,l,l
+18,17,Worse Than Watergate,The Lies of George W. Bush,l,l
+19,8,Plan of Attack,The Price of Loyalty,n,l
+19,9,Plan of Attack,"House of Bush, House of Saud",n,l
+19,13,Plan of Attack,The Great Unraveling,n,l
+19,14,Plan of Attack,Against All Enemies,n,l
+19,15,Plan of Attack,American Dynasty,n,l
+19,18,Plan of Attack,Worse Than Watergate,n,l
+20,8,Bushwhacked,The Price of Loyalty,l,l
+20,13,Bushwhacked,The Great Unraveling,l,l
+20,15,Bushwhacked,American Dynasty,l,l
+20,16,Bushwhacked,Big Lies,l,l
+20,17,Bushwhacked,The Lies of George W. Bush,l,l
+20,18,Bushwhacked,Worse Than Watergate,l,l
+20,19,Bushwhacked,Plan of Attack,l,n
+21,8,Lies and the Lying Liars Who Tell Them,The Price of Loyalty,l,l
+21,13,Lies and the Lying Liars Who Tell Them,The Great Unraveling,l,l
+21,15,Lies and the Lying Liars Who Tell Them,American Dynasty,l,l
+21,16,Lies and the Lying Liars Who Tell Them,Big Lies,l,l
+21,19,Lies and the Lying Liars Who Tell Them,Plan of Attack,l,n
+21,20,Lies and the Lying Liars Who Tell Them,Bushwhacked,l,l
+22,8,"Dude, Where's My Country?",The Price of Loyalty,l,l
+22,13,"Dude, Where's My Country?",The Great Unraveling,l,l
+22,16,"Dude, Where's My Country?",Big Lies,l,l
+22,17,"Dude, Where's My Country?",The Lies of George W. Bush,l,l
+22,20,"Dude, Where's My Country?",Bushwhacked,l,l
+23,13,Thieves in High Places,The Great Unraveling,l,l
+23,16,Thieves in High Places,Big Lies,l,l
+23,20,Thieves in High Places,Bushwhacked,l,l
+23,21,Thieves in High Places,Lies and the Lying Liars Who Tell Them,l,l
+23,22,Thieves in High Places,"Dude, Where's My Country?",l,l
