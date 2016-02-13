@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <link type="text/css" rel="css" href="style.css"/>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <style type="text/css">
+
+.chart {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.text {
+  font-size: 11px;
+}
+.tabletext {
+  font-size: 15px;
+}
+rect {
+  fill: none;
+}
+.tooltip {
+    position: absolute;
+    z-index: 9900000;
+    opacity: 1;
+    height: auto;
+    font-size: 10px;
+    filter: alpha(opacity=100);
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+}
+
+.d3-tip {
+  			line-height: 1;
+  			font-weight: bold;
+  			padding: 8px;
+  			background: rgba(0, 0, 0, 0.8);
+  			color: white;
+  			border-radius: 10px;
+  			opacity:0.8;
+		}
+
+/* Creates a small triangle extender for the tooltip */
+		.d3-tip:after {
+  			box-sizing: border-box;
+  			display: inline;
+  			font-size: 5px;
+ 			width: 100%;
+  			line-height: 1;
+  			color: rgba(0, 0, 0, 0.8);
+  			content: "\25BC";
+ 			// position: absolute;
+  			text-align: center;
+		}
+
+/* Style northward tooltips differently */
+		.d3-tip.n:after {
+  			margin: -1px 0 0 0;
+  			top: 100%;
+  			left: 0;
+		}
+		.Title {
+  font-size: 25px;
+  font-family:Impact;
+}
+	.subtitle {
+  font-size: 13px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="body">
+      <div id="footer">
+      <table><tr><td align="left" colspan="3"  width=650><text class="Title">ICT Expenditures and Percent Change for Companies by Major Industry Sector</td></tr></table>
+      <tr><td><p></p></td></tr>
+      <table><tr><td></td>
+      <td align="right" ><div><select id="mySelect" onchange="myfunction()" class="tabletext">
+          <option value="SF" >Software Expenditures</option>
+          <option value="EQ" >Equipment EExpenditures</option>
+        </select></div></td>
+        <td></td></tr></table>
+      <table><tr><td align="left" colspan="3" ><hr width=650 align=left></hr></td></tr></table>
+      <table><tr><td align="middle" colspan="3" class="subtitle"></td></tr></table>
+        <table><tr><td align="middle" colspan="3"  width=650><div id="graph"></div></td></tr>
+        <tr><td align="middle"><p></p></td></tr>
+        <tr><td width="20%" ></td><td width="20%" class="subtile" align="right"><p class="subtitle">Percent Change</p></td><td colspan="3" width=650><div id="legend"></div></td></tr></table>
+      </div>
+      
+    </div>
+    <script type="text/javascript">
+    var  year=2013;
+var w = 350 - 20,
+    h = 350 - 20,
+    x = d3.scale.linear().range([0, w]),
+    y = d3.scale.linear().range([0, h]),
+    colorCalibration = ['#1a9850','#66bd63','#a6d96a','#d9ef8b','#fee08b','fdae61','#f46d43','#d73027'],
+    colorIndex=['-40','-30','-20','-10','0','10','20','30'],
+    root,
+    node;
+
+	drawTree("data/indus_2004.json","change_sf","size_sf");
+  //draw legend
+  
+var svg1=d3.select("div#legend").append("svg")
+	.attr("width",300)
+	.attr("height",40)
+
+for(var i=0;i<8;i++){
+svg1.append("g").attr("id",function(d){return "g"+i;});
+svg1.select("g#g"+i).append("rect")
+	.attr("id",function(d){return "g"+i;})
+	.attr("width",25)
+	.attr("height",25)
+	.attr("transform","translate("+i*25+",0)")
+	.style("fill", function(d) {return colorCalibration[i]; })
+console.log(svg1.select("g#g"+i));
+svg1.select("g#g"+i).append("text")
+	.text(function(d){return colorIndex[i];})
+	.attr("transform","translate("+i*25+",35)")
+	.style("font-size","11px")
+	.style("opacity",1);
+}
+
+
+
+/***************************************/
+
+function drawTree(treedata,change,size){
+jQuery('div#graph').empty();
+$('div#graph').fadeIn(400,"linear",function(){});
+var treemap = d3.layout.treemap()
+    .round(false)
+    .size([w, h])
+    .sticky(true)
+    .value(function(d) { if(size=="size_sf"){return d.size_sf;}
+    else{return d.size_eq;} });
+
+var svg = d3.select("div#graph").append("div")
+	.attr("id","treemap")
+    .attr("class", "chart")
+    .style("width", w + "px")
+    .style("height", h + "px")
+  .append("svg:svg")
+    .attr("width", w)
+    .attr("height", h)
+    .attr("transform","translate(0,10)")
+  .append("svg:g");
+  var prop;
+  
+ var tip = d3.tip()
+  			.attr('class', 'tooltip')
+  			.offset([-10, 20])
+  			.direction('e')
+  			.html(function(d) {
+  			if(change=="change_sf"){return "<span>\"" + d.name + "\"</span><p></p><strong>total expenditure-software:</strong> <span>" + d.size_sf + "</span><p></p><strong>percent change-software:</strong> <span>" + d.change_sf + "</span><p></p><strong>propotion of software expenditure:</strong> <span>" + (d.size_sf/(d.size_sf+d.size_eq)*100).toFixed(2) + " %</span>";}
+    		else{return "<span>\"" + d.name + "\"</span><p></p><strong>total expenditure-equipment:</strong> <span>" + d.size_eq + "</span><p></p><strong>percent change-equipment:</strong> <span>" + d.change_eq + "</span><p></p><strong>propotion of equipment expenditure:</strong> <span>" + (d.size_eq/(d.size_sf+d.size_eq)*100).toFixed(2) + " %</span>";}
+  			});
+svg.call(tip);
+   
+d3.json(treedata, function(data) {
+console.log(data);
+  node = root = data.children[0];
+
+  var nodes=treemap.nodes(root)
+      	.filter(function(d) { return !d.children; });//筛除父节点，得到子节点
+//console.log(svg.selectAll("g").data(nodes));
+  var cell = svg.selectAll("g")//画子节点的方框，添加zoom
+      .data(nodes)
+    .enter().append("svg:g")
+      .attr("class", "cell")
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; })
+      .on("click", function(d) { console.log(root);console.log(d);console.log(node);return zoom(node ==root? d : root); });//如果双击的是父节点，则放大父节点内容，否则显示root节点内容（即所有）
+	  
+  
+  cell.append("svg:rect")//填色
+      .attr("width", function(d) { return d.dx - 1; })
+      .attr("height", function(d) { return d.dy - 1; })
+      .style("stroke","Gray")//边框
+       .style("fill", function(d) {
+      if(change=="change_sf"){return color(d.change_sf/10);}
+      else{return color(d.change_eq/10);}  })
+      .on('mouseover', tip.show)
+  .on('mouseout', tip.hide);
+
+  cell.append("svg:text")//lable
+  	  .attr("class","text")
+      .attr("x", function(d) { return d.dx / 2; })
+      .attr("y", function(d) { return d.dy / 2; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", "middle")
+      .style("font-family","Impact")
+      .style("font-size","10px")
+      .text(function(d) { return d.id; })
+      .style("opacity", function(d) { d.w = this.getComputedTextLength(); return d.dx > d.w ? 1 : 0; });
+
+  d3.select(window).on("click", function() { zoom(root); });//点击窗口位置，显示root中所有节点内容
+  
+});
+
+function size(d) {
+  if(size=="size_sf"){return d.size_sf;}
+    else{return d.size_eq;}
+}
+function color(d){
+	var index;
+	if(d>=3){
+		index=7;
+	}
+	else if(d>=2&&d<3){
+		index=6;
+	}
+	else if(d>=1&&d<2){
+		index=5;
+	}
+	else if(d>=0&&d<1){
+		index=4;
+	}
+	else if(d>=-1&&d<0){
+		index=3;
+	}
+	else if(d>=-2&&d<-1){
+		index=2;
+	}
+	else if(d>=-3&&d<-2){
+		index=1;
+	}
+	else if(d<-3){
+		index=0
+	}
+	return colorCalibration[index];
+}
+function zoom(d) {
+  var kx = w / d.dx, ky = h / d.dy;
+  x.domain([d.x, d.x + d.dx]);
+  y.domain([d.y, d.y + d.dy]);
+  var t = svg.selectAll("g.cell").transition()
+      .duration(d3.event.altKey ? 7500 : 750)
+      .attr("transform", function(d) { return "translate(" + x(d.x) + "," + y(d.y) + ")"; });
+
+  t.select("rect")
+      .attr("width", function(d) { return kx * d.dx - 1; })
+      .attr("height", function(d) { return ky * d.dy - 1; });
+  var n=d;
+  t.select("text")
+      .attr("x", function(d) { return kx * d.dx / 2; })
+      .attr("y", function(d) { return ky * d.dy / 2; })
+      .attr("width", function(d) { return kx * d.dx - 1; })
+      .attr("height", function(d) { return ky * d.dy - 1; })
+      .attr("class","text")
+      .style("font-family","Impact")
+      .text(function(d) {if(n.name=="Industry"){return d.id;} 
+      else{return d.name;}})
+      .style("font-size",function(d) {if(n.name=="Industry"){return "10px";} 
+      else{return "15px";} })
+      .style("opacity", function(d) { return kx * d.dx > d.w ? 1 : 0; });
+  node = d;
+  d3.event.stopPropagation();
+
+
+}
+//
+}
+
+function myfunction(){
+	
+	if(document.getElementById("mySelect").value=="SF"){
+	$('div#graph').fadeOut(300,function(){drawTree("data/indus_"+year+".json","change_sf","size_sf");});
+		
+	}
+	else if(document.getElementById("mySelect").value=="EQ"){
+	$('div#graph').fadeOut(300,function(){drawTree("data/indus_"+year+".json","change_eq","size_eq");});
+	}
+}
+function myFunction(y){
+	
+	year=y;
+	console.log(y);
+	if(document.getElementById("mySelect").value=="SF"){
+	$('div#graph').fadeOut(300,function(){drawTree("data/indus_"+year+".json","change_sf","size_sf");});
+		
+	}
+	else if(document.getElementById("mySelect").value=="EQ"){
+	$('div#graph').fadeOut(300,function(){drawTree("data/indus_"+year+".json","change_eq","size_eq");});
+	}
+}
+function getselect(){
+if(document.getElementById("mySelect").value=="SF"){
+	return "SF";
+		
+	}
+	else if(document.getElementById("mySelect").value=="EQ"){
+	return "EQ";
+	}
+}
+    
+
+ </script>
+
+  </body>
+</html>
