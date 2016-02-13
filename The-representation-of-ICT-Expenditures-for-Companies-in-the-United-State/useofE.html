@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+svg {
+    font: 10px sans-serif;
+}
+
+.background path {
+    fill: none;
+    stroke: #ddd;
+    stroke-opacity: .5;
+    shape-rendering: crispEdges;
+}
+
+.foreground path {
+    fill: none;
+}
+
+.brush .extent {
+    fill-opacity: .3;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+    cursor: move;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 9900000;
+    opacity: 0.5;
+    height: auto;
+    font-size: 10px;
+    filter: alpha(opacity=100);
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+}
+
+.Title {
+  font-size: 32px;
+  font-family:Impact;
+  opacity:0.8
+}
+  .subtitle {
+  font-size: 20px;
+  font-family:Impact;
+}
+.tabletext {
+  font-size: 15px;
+}
+.myButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color:#ffffff;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:10px;
+  font-weight:bold;
+  padding:4px 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+  background-color:#f6f6f6;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+form {
+  position: absolute;
+  right: 140px;
+  left: 80px;
+  top: 520px;
+  font-size: 1px;
+}
+/*table {
+  font-size:1px;
+}*/
+
+</style>
+<!--body>
+<div id = "table"> <table-->
+<form>
+    <label><input type="checkbox" name="industry" value="Accommodation and food services">Accommodation and food services</label>
+    <label><input type="checkbox" name="industry" value="Professional. scientific and technical services">Professional. scientific and technical services</label>
+    <label><input type="checkbox" name="industry" value="Construction">Construction</label>
+    <label><input type="checkbox" name="industry" value="Manufacturing">Manufacturing</label>
+    <label><input type="checkbox" name="industry" value="Durable goods industries">Durable goods industries</label>
+    <label><input type="checkbox" name="industry" value="Administrative and support and waste management">Administrative and support and waste management</label>
+    <label><input type="checkbox" name="industry" value="Nondurable goods industries">Nondurable goods industries</label>
+    <label><input type="checkbox" name="industry" value="Wholesale trade">Wholesale trade</label>
+    <label><input type="checkbox" name="industry" value="Retail trade">Retail trade</label>
+    <label><input type="checkbox" name="industry" value="Transportation and warehousing">Transportation and warehousing</label>
+    <label><input type="checkbox" name="industry" value="Information">Information</label>
+    <label><input type="checkbox" name="industry" value="Finance and insurance">Finance and insurance</label>
+    <label><input type="checkbox" name="industry" value="Mining">Mining</label>
+    <label><input type="checkbox" name="industry" value="Utilities">Utilities</label>
+    <label><input type="checkbox" name="industry" value="Real estate and rental and leasing">Real estate and rental and leasing</label>
+    <label><input type="checkbox" name="industry" value="Management of companies and enterprises">Management of companies and enterprises</label>
+    <label><input type="checkbox" name="industry" value="Educational services">Educational services</label>
+    <label><input type="checkbox" name="industry" value="Health care and social assistance">Health care and social assistance</label>
+    <label><input type="checkbox" name="industry" value="Forestry. fishing and agricultural services">Forestry. fishing and agricultural services</label>
+    <label><input type="checkbox" name="industry" value="Arts. entertainment and recreation">Arts. entertainment and recreation</label>
+    <label><input type="checkbox" name="industry" value="Other services (except public administration)">Other services (except public administration)</label>
+    <label><input type="checkbox" name="industry" value="Equipment expenditures serving multiple industry codes">Equipment expenditures serving multiple industry codes</label>
+</form>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://www.ourd3js.com/library/multext.js" charset="utf-8"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<table><tr><td align="left" colspan="3"  width="100%"><text class="Title">Use of ICT Expenditures</td></tr></table>
+<table width="100%">
+  <td align="right" class="Title" rowspan="2">
+  <button width=5 heigth=10 class="myButton" onclick="window.location.href='dashboard.html'">Overview</button>
+  <button width=5 heigth=10 class="myButton" onclick="window.location.href='themeriver.html'">Trend of Expenditure</button>
+  <button width=5 height=10 class="myButton" onclick="javascript:window.location.reload()">Refresh</button>
+  </td>
+</table>
+
+<script>
+
+var margin = {top: 50, right: 10, bottom: 10, left: 10},
+    width = 960 - margin.left - margin.right + 150,
+    height = 500 - margin.top - margin.bottom - 100;
+
+var x = d3.scale.ordinal().rangePoints([0, width], 1),
+    y = {},
+    dragging = {};
+
+var line = d3.svg.line(),
+    axis = d3.svg.axis().orient("left"),
+    background,
+    foreground;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+function color(d) { return d.name; }
+var colorScale = d3.scale.category20();
+
+var tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("opacity", 0.0);
+/*var colorScale = {
+    "Forestry. fishing and agricultural services": '#662509',
+    "Mining" : '#aec7e8',
+    "Utilities" : '#2B888B',
+    "Construction" : '#ffbb78',
+    "Manufacturing" : '#d62728',
+    "Durable goods industries" : '#98df8a',
+    "Nondurable goods industries" : '#94F5AE',
+    "Wholesale trade" : '#ff9896',
+    "Retail trade" : '#54098E',
+    "Transportation and warehousing" : '#CCB9DB',
+    "Information" : '#ff7f0e',
+    "Finance and insurance" : '#B68E85',
+    "Real estate and rental and leasing" : '#e377c2',
+    "Professional. scientific and technical services" : '#f7b6d2',
+    "Management of companies and enterprises" : '#EBFA1A',
+    "Administrative and support and waste management" : '#D20B89',
+    "Educational services" : ' #bcbd22',
+    "Health care and social assistance" : '#BADC8D',
+    "Arts. entertainment and recreation" : '#A4AB46',
+    "Accommodation and food services" : '#9edae5',
+    "Other services (except public administration)" : '#e7ba52',
+    "Equipment expenditures serving multiple industry codes" : '#1f77b4'
+};*/
+var choosed = new Array();
+d3.csv("data/test4.csv", function(error, industry) {
+    // Extract the list of dimensions and create a scale for each.
+    
+    x.domain(dimensions = d3.keys(industry[0]).filter(function(d) {
+        return d != "name" && (y[d] = d3.scale.linear()
+        .domain(d3.extent(industry, function(p) { return +p[d]; }))
+        .range([height, 0]));
+  }));
+
+  var total = [1417123, 1565396, 2982519, 1857133, 1125386];
+  function calculatewidth(d) {
+      /*d.ESpercentage = d.Expenditures_for_Software / total[0];
+      d.EEpercentage = d.Expenditures_for_Equipment / total[1];
+      d.Eipercentage = d.Expenditures_by_industry / total[2];
+      d.CEpercentage = d.Capitalized_Expenditures / total[3];
+      d.NEpercentage = d.Noncapitalized_Expenditures / total[4];
+      var a = (d.ESpercentage + d.EEpercentage + d.Eipercentage + d.CEpercentage + d.NEpercentage) / 5;
+      //console.log(a);
+      var width = Math.round(300 * a);
+      //console.log(width + "px");*/
+      var width = 3;
+      return width + "px";
+  }
+
+  background = svg.append("g")
+      .attr("class", "background")
+      .selectAll("path")
+      .data(industry)
+      .enter().append("path")
+      .attr("d", path);
+
+  var g = svg.selectAll(".dimension")
+      .data(dimensions)
+      .enter().append("g")
+      .attr("class", "dimension")
+      .attr("transform", function(d) { return "translate(" + x(d) + ")"; })
+      .call(d3.behavior.drag()
+      .origin(function(d) { return {x: x(d)}; })
+      .on("dragstart", function(d) {
+          dragging[d] = x(d);
+          background.attr("visibility", "hidden");
+        })
+      .on("drag", function(d) {
+          dragging[d] = Math.min(width, Math.max(0, d3.event.x));
+          foreground.attr("d", path);
+          dimensions.sort(function(a, b) { return position(a) - position(b); });
+          x.domain(dimensions);
+          g.attr("transform", function(d) { return "translate(" + position(d) + ")"; })
+        })
+      .on("dragend", function(d) {
+          delete dragging[d];
+          transition(d3.select(this)).attr("transform", "translate(" + x(d) + ")");
+          transition(foreground).attr("d", path);
+          background
+              .attr("d", path)
+              .transition()
+              .delay(500)
+              .duration(0)
+              .attr("visibility", null);
+        }));
+      // Add an axis and title.
+  g.append("g")
+      .attr("class", "axis")
+      .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
+      .append("text")
+      .style("text-anchor", "middle")
+      .attr("y", -9)
+      .text(function(d) { return d; })
+      .style("color", "black");
+
+  // Add and store a brush for each axis.
+  g.append("g")
+      .attr("class", "brush")
+      .each(function(d) {
+        d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brushstart", brushstart).on("brush", brush));
+      })
+      .selectAll("rect")
+      .attr("x", -8)
+      .attr("width", 16);
+
+  d3.selectAll("input").on("change", change);
+  var ch = new Array();
+  var flag = new Object();
+  
+  for (var i = 0 ; i < 22; i++)
+  {
+    flag[industry[i].name] = 0;
+  }
+  function change() {
+    //var flag = new Array();
+    var j = 0;
+    for (var i = 0 ; i < industry.length; i++)
+    {
+      if (industry[i].name == this.value)
+      {
+        ch[j] = new Object();
+        ch[j] = industry[i];
+        //console.log(flag[industry[i].name]);
+        flag[industry[i].name] += 1;
+        j ++;
+      }
+    }
+    //console.log("###");
+    if (((flag[ch[0].name]/10) % 2) != 0)
+    {
+        //console.log(ch);
+        for (var i =0; i < ch.length; i++)
+        {
+          choosed.push(ch[i]);
+        }
+        addindustry(choosed);
+        //console.log(choosed);
+    }
+    else
+    {
+        for (var i =0; i < ch.length; i++)
+        {
+          choosed.pop(ch[i]);
+        }
+        //choosed.remove(ch);
+        removeindustry(choosed);
+        //console.log(choosed);
+    }
+    
+  }
+
+  function addindustry(choose)
+  {
+    //console.log(choose);
+  // Add blue foreground lines for focus.
+    jQuery('g.foreground').empty();
+
+
+    foreground = svg.append("g")
+      .attr("class", "foreground")
+      .selectAll("path")
+      .data(choose)
+      .enter().append("path")
+      .attr("d", path)
+      .style("stroke", function(d) { 
+                //console.log( colorScale[d.name] );
+                return colorScale(color(d));
+                //return colorScale[d.name]; 
+      })
+      //.style("width", function(d){ return calculatewidth(d); })
+
+      .on("mouseover",function(d, i){
+            tooltip.html(d.name + "<br />")
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY + 20) + "px")
+            .style("opacity", 1.0);
+            tooltip.style("left", (d3.event.pageX) + "px");
+            /*d3.selectAll("path")
+              .style("stroke", "#ddd")
+              .style("stroke-opacity", 0.8);*/
+            d3.select(this)
+                .style("stroke", "green")
+            
+      })
+      .on("mouseout",function(d, i){ 
+          tooltip.style("opacity", 0.0);
+          //console.log(d3.select(this));
+          /*d3.selectAll("path")
+              .style("stroke", function(f){ return colorScale(color(f));})
+              .style("stroke-opacity", 1);*/
+          d3.select(this)
+            .transition()
+            .duration(500)
+            .style("stroke", function(f){ 
+              console.log(f);
+              return colorScale(color(f));
+            });
+      });
+
+  }
+  
+  function removeindustry(choose)
+  {
+    //console.log(choose);
+    // Add blue foreground lines for focus.
+    
+    /*foreground = svg.append("g")
+      .attr("class", "foreground")
+      .selectAll("path")
+      .data(choose)
+      .enter().append("path")
+      .attr("d", path)
+      .style("stroke", "#ddd")
+      .style("stroke-opacity", 1);*/
+
+      jQuery('g.foreground').empty();
+    
+      foreground = svg.append("g")
+      .attr("class", "foreground")
+      .selectAll("path")
+      .data(choose)
+      .enter().append("path")
+      .attr("d", path)
+      .style("stroke", function(d) {  //console.log(colorScale[d.name]);
+                                    //return colorScale(color(d));
+                                    return colorScale(color(d)); 
+                                    })
+      //.style("width", function(d){ return calculatewidth(d); })
+
+      .on("mouseover",function(d, i){
+            tooltip.html(d.name + "<br />")
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY + 20) + "px")
+            .style("opacity", 1.0);
+            tooltip.style("left", (d3.event.pageX) + "px");
+            /*d3.selectAll("path")
+              .style("stroke", "#ddd")
+              .style("stroke-opacity", 0.8);*/
+            d3.select(this)
+                .style("stroke", "green")
+            
+      })
+      .on("mouseout",function(d, i){ 
+          tooltip.style("opacity", 0.0);
+          //console.log(d3.select(this));
+          /*d3.selectAll("path")
+              .style("stroke", function(f){ return colorScale(color(f));})
+              .style("stroke-opacity", 1);*/
+          d3.select(this)
+            .transition()
+            .duration(500)
+            .style("stroke", function(f){
+              console.log(f); 
+              return colorScale(color(f));
+            });
+      });
+
+  }
+
+  //jQuery('g.dimension').remove();
+
+});
+
+function position(d) {
+    var v = dragging[d];
+    return v == null ? x(d) : v;
+}
+
+function transition(g) {
+    return g.transition().duration(500);
+}
+
+// Returns the path for a given data point.
+function path(d) {
+  //console.log(d);
+    return line(dimensions.map(function(p) { return [position(p), y[p](d[p])]; }));
+}
+
+function brushstart() {
+    d3.event.sourceEvent.stopPropagation();
+}
+
+// Handles a brush event, toggling the display of foreground lines.
+function brush() {
+    var actives = dimensions.filter(function(p) { return !y[p].brush.empty(); }),
+        extents = actives.map(function(p) { return y[p].brush.extent(); });
+    foreground.style("display", function(d) {
+        return actives.every(function(p, i) {
+        return extents[i][0] <= d[p] && d[p] <= extents[i][1];
+        }) ? null : "none";
+    });
+}
+
+</script>
