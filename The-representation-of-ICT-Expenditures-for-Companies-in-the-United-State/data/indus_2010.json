@@ -1,0 +1,31 @@
+{"name":"treemap",
+"children":[
+{
+ "name": "Industry",
+ "children": [
+   {"name": "Forestry, fishing, and agricultural services","id":"113-115", "size_sf":103,"size_eq": 50,"change_sf":-2.83,"change_eq":-10.71},
+   {"name": "Mining","id":"21", "size_sf":1337,"size_eq": 910,"change_sf":-31.72,"change_eq":-16.44},
+   {"name": "Utilities","id":"223", "size_sf":3299,"size_eq": 2072,"change_sf":5.23,"change_eq":6.64},
+   {"name": "Construction","id":"23", "size_sf":671,"size_eq": 1411 ,"change_sf":-0.74,"change_eq":-2.76},
+   {"name": "Manufacturing","id":"31-33", "size_sf":18908,"size_eq": 11933 ,"change_sf":2.84,"change_eq":3.80},
+   {"name": "Durable goods industries","id":"321,327, 33", "size_sf":11205,"size_eq": 7742 ,"change_sf":1.72,"change_eq": 3.36},
+   {"name": "Nondurable goods industries","id":"31, 322-326", "size_sf":7703,"size_eq": 4191 ,"change_sf":4.53,"change_eq":4.59},
+   {"name": "Wholesale trade","id":"42", "size_sf":4582,"size_eq":4326 ,"change_sf":-21.12,"change_eq":13.99},
+   {"name": "Retail trade","id":"44-45", "size_sf":9072,"size_eq": 7578 ,"change_sf":9.70,"change_eq":15.31},
+   {"name": "Transportation and warehousing","id":"48-49", "size_sf":3094,"size_eq": 1853 ,"change_sf":12.88,"change_eq":-3.79},
+   {"name": "Information","id":"51", "size_sf":17717,"size_eq": 53570,"change_sf":-6.77,"change_eq":-13.07 },
+   {"name": "Finance and insurance","id":"52", "size_sf":31354,"size_eq": 16795,"change_sf":2.69,"change_eq":3.46},
+   {"name": "Real estate and rental and leasing","id":"53", "size_sf":1373,"size_eq": 1583,"change_sf":-0.94,"change_eq":-32.67},
+   {"name": "Professional, scientific, and technical services","id":"54", "size_sf":11613,"size_eq": 11086 ,"change_sf":6.91,"change_eq":-0.34},
+   {"name": "Management of companies and enterprises","id":"55", "size_sf":1596,"size_eq": 1552 ,"change_sf":-19.23,"change_eq":44.24 },
+   {"name": "Administrative and support and waste management","id":"56", "size_sf":3644,"size_eq": 2872,"change_sf":7.78,"change_eq":-2.05},
+   {"name": "Educational services","id":"61", "size_sf":1559,"size_eq": 2842 ,"change_sf":-11.27,"change_eq":11.28},
+   {"name": "Health care and social assistance","id":"62", "size_sf":8572,"size_eq": 14387 ,"change_sf":5.00,"change_eq":7.00},
+	{"name": "Arts, entertainment, and recreation","id":"71", "size_sf":585,"size_eq": 858 ,"change_sf":-5.95,"change_eq":15.56},
+	{"name": "Accommodation and food services","id":"72", "size_sf":974,"size_eq": 1267  ,"change_sf":-11.94,"change_eq":-1.17},
+{"name": "Other services (except public administration)","id":"81", "size_sf":1877,"size_eq": 1952 ,"change_sf":1.84,"change_eq":-8.53},
+{"name": "Equipment expenditures serving multiple industry codes","id":"00", "size_sf":881,"size_eq": 741 ,"change_sf":-28.26,"change_eq":-11.09}
+ ]
+}
+]
+}
