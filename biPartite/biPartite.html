@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<meta charset="UTF-8">
+	<title>biPartite</title>
+	<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.min.css">
+  	<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+</head>
+<style>
+body{
+	width:1200px;
+	margin:100px auto;
+}
+svg text{
+	font-size:12px;
+}
+rect{
+	shape-rendering:crispEdges;
+}
+.tooltip{
+	position: absolute;
+	z-index: 9900000;
+	opacity: 1;
+	height: auto;
+	font-size: 10px;
+	filter: alpha(opacity=100);
+  	padding: 5px;
+  	border-width: 1px;
+  	border-style: solid;
+  	border-radius: 5px;
+  	-moz-border-radius: 5px 5px 5px 5px;
+  	-webkit-border-radius: 5px 5px 5px 5px;
+  	border-radius: 5px 5px 5px 5px;
+	background-color: white;
+}
+</style>
+
+<body class="ui-expenditures" style="border:0;">
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="biPartite4.js"></script>
+
+<p>
+  	<label for="amount"> year：</label>
+  	<input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+ 
+<div id="slider"></div>
+<div id="swatch" class="ui-expenditures ui-corner-all"></div>
+
+<script>
+var width = 1200, height = 610, margin ={b:0, t:40, l:170, r:50};
+var tooltip = d3.select("body")
+				.append("div")
+				.attr("class", "tooltip")
+				.style("opacity", 0.0);
+
+d3.csv("data/total.csv", function(d){
+	//console.log(x(0));
+	var svg = d3.select("body")
+		.append("svg").attr('width',width).attr('height',(height+margin.b+margin.t))
+		.append("g").attr("transform","translate("+ margin.l+","+margin.t+")");
+
+	//console.log(d[2]["expenditures"]);
+	var data = [ 
+		//{data:bP.partData1(d,"expenditures by usages"), id:'Expenditures1', header:["year", "usages", "Expenditures"]},
+		{data:bP.partData2(d,"expenditures by industry"), id:'Expenditures2', header:["industry", "usages", "Expenditures"]},
+		{data:bP.partData3(d,"expenditures by types"), id:'Expenditures3', header:["industry", "types", "Expenditures"]},	
+	];
+	bP.draw(data, svg, tooltip);
+});
+
+var year = ["2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2013"];
+function x(d) { return year[d]; }
+function refreshSwatch(file) {
+	var svg = d3.select("body")
+		.append("svg").attr('width',width).attr('height',(height+margin.b+margin.t))
+		.append("g").attr("transform","translate("+ margin.l+","+margin.t+")");
+    d3.csv("data/" + file + ".csv", function(d){
+		var data = [ 
+			//{data:bP.partData1(d,"expenditures by usages"), id:'Expenditures1', header:["year", "usages", "Expenditures"]},
+			{data:bP.partData2(d,"expenditures by industry"), id:'Expenditures2', header:["industry", "usages", "Expenditures"]},
+			{data:bP.partData3(d,"expenditures by types"), id:'Expenditures3', header:["industry", "types", "Expenditures"]},
+		];
+		bP.draw(data, svg, tooltip);
+  	});
+}
+$(function() {
+    $( "#slider" ).slider({
+      	value:1,
+      	min: 2003,
+      	max: 2013,
+      	step: 1,
+      	slide: function( event, ui ) {
+        	$( "#amount" ).val( ui.value );
+      	},
+      	change: function(event, ui) { refreshSwatch(ui.value); }
+    });
+    $( "#amount" ).val( $( "#slider" ).slider( "value" ) );
+});
+</script>
+</body>
