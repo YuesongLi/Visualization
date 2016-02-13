@@ -1,0 +1,442 @@
+Source,Target,SLabel,TLabel,Sclass,Tclass
+1,0,Bush vs. the Beltway,1000 Years for Revenge,c,n
+2,0,Charlie Wilson's War,1000 Years for Revenge,c,n
+3,0,Losing Bin Laden,1000 Years for Revenge,c,n
+3,1,Losing Bin Laden,Bush vs. the Beltway,c,c
+5,0,The Man Who Warned America,1000 Years for Revenge,c,n
+5,1,The Man Who Warned America,Bush vs. the Beltway,c,c
+5,2,The Man Who Warned America,Charlie Wilson's War,c,c
+5,3,The Man Who Warned America,Losing Bin Laden,c,c
+5,4,The Man Who Warned America,Sleeping With the Devil,c,n
+8,3,A National Party No More,Losing Bin Laden,c,c
+9,3,Bush Country,Losing Bin Laden,c,c
+9,8,Bush Country,A National Party No More,c,c
+10,3,Dereliction of Duty,Losing Bin Laden,c,c
+10,6,Dereliction of Duty,Why America Slept,c,n
+10,8,Dereliction of Duty,A National Party No More,c,c
+11,3,Legacy,Losing Bin Laden,c,c
+11,8,Legacy,A National Party No More,c,c
+11,9,Legacy,Bush Country,c,c
+11,10,Legacy,Dereliction of Duty,c,c
+12,3,Off with Their Heads,Losing Bin Laden,c,c
+12,6,Off with Their Heads,Why America Slept,c,n
+12,8,Off with Their Heads,A National Party No More,c,c
+12,9,Off with Their Heads,Bush Country,c,c
+12,10,Off with Their Heads,Dereliction of Duty,c,c
+12,11,Off with Their Heads,Legacy,c,c
+13,3,Persecution,Losing Bin Laden,c,c
+13,8,Persecution,A National Party No More,c,c
+13,11,Persecution,Legacy,c,c
+13,12,Persecution,Off with Their Heads,c,c
+14,3,Rumsfeld's War,Losing Bin Laden,c,c
+14,7,Rumsfeld's War,Ghost Wars,c,n
+14,8,Rumsfeld's War,A National Party No More,c,c
+14,9,Rumsfeld's War,Bush Country,c,c
+14,11,Rumsfeld's War,Legacy,c,c
+14,12,Rumsfeld's War,Off with Their Heads,c,c
+15,3,Breakdown,Losing Bin Laden,c,c
+15,10,Breakdown,Dereliction of Duty,c,c
+15,12,Breakdown,Off with Their Heads,c,c
+16,3,Betrayal,Losing Bin Laden,c,c
+16,10,Betrayal,Dereliction of Duty,c,c
+16,15,Betrayal,Breakdown,c,c
+17,3,Shut Up and Sing,Losing Bin Laden,c,c
+17,11,Shut Up and Sing,Legacy,c,c
+17,12,Shut Up and Sing,Off with Their Heads,c,c
+17,13,Shut Up and Sing,Persecution,c,c
+19,3,The Right Man,Losing Bin Laden,c,c
+19,10,The Right Man,Dereliction of Duty,c,c
+20,3,Ten Minutes from Normal,Losing Bin Laden,c,c
+20,8,Ten Minutes from Normal,A National Party No More,c,c
+20,9,Ten Minutes from Normal,Bush Country,c,c
+20,11,Ten Minutes from Normal,Legacy,c,c
+21,3,Hillary's Scheme,Losing Bin Laden,c,c
+21,8,Hillary's Scheme,A National Party No More,c,c
+21,10,Hillary's Scheme,Dereliction of Duty,c,c
+21,11,Hillary's Scheme,Legacy,c,c
+22,3,The French Betrayal of America,Losing Bin Laden,c,c
+22,6,The French Betrayal of America,Why America Slept,c,n
+22,8,The French Betrayal of America,A National Party No More,c,c
+22,11,The French Betrayal of America,Legacy,c,c
+23,3,Tales from the Left Coast,Losing Bin Laden,c,c
+23,8,Tales from the Left Coast,A National Party No More,c,c
+23,12,Tales from the Left Coast,Off with Their Heads,c,c
+23,21,Tales from the Left Coast,Hillary's Scheme,c,c
+24,3,Hating America,Losing Bin Laden,c,c
+24,8,Hating America,A National Party No More,c,c
+24,9,Hating America,Bush Country,c,c
+24,12,Hating America,Off with Their Heads,c,c
+24,20,Hating America,Ten Minutes from Normal,c,c
+25,3,The Third Terrorist,Losing Bin Laden,c,c
+25,6,The Third Terrorist,Why America Slept,c,n
+25,14,The Third Terrorist,Rumsfeld's War,c,c
+25,22,The Third Terrorist,The French Betrayal of America,c,c
+26,3,Endgame,Losing Bin Laden,c,c
+26,8,Endgame,A National Party No More,c,c
+26,11,Endgame,Legacy,c,c
+26,14,Endgame,Rumsfeld's War,c,c
+26,24,Endgame,Hating America,c,c
+27,3,Spin Sisters,Losing Bin Laden,c,c
+27,8,Spin Sisters,A National Party No More,c,c
+27,9,Spin Sisters,Bush Country,c,c
+27,11,Spin Sisters,Legacy,c,c
+27,23,Spin Sisters,Tales from the Left Coast,c,c
+29,4,Dangerous Dimplomacy,Sleeping With the Devil,c,n
+29,6,Dangerous Dimplomacy,Why America Slept,c,n
+29,11,Dangerous Dimplomacy,Legacy,c,c
+29,13,Dangerous Dimplomacy,Persecution,c,c
+32,8,The Death of Right and Wrong,A National Party No More,c,c
+32,12,The Death of Right and Wrong,Off with Their Heads,c,c
+32,13,The Death of Right and Wrong,Persecution,c,c
+32,23,The Death of Right and Wrong,Tales from the Left Coast,c,c
+33,8,Useful Idiots,A National Party No More,c,c
+33,10,Useful Idiots,Dereliction of Duty,c,c
+33,12,Useful Idiots,Off with Their Heads,c,c
+33,23,Useful Idiots,Tales from the Left Coast,c,c
+33,32,Useful Idiots,The Death of Right and Wrong,c,c
+35,8,Let Freedom Ring,A National Party No More,c,c
+35,10,Let Freedom Ring,Dereliction of Duty,c,c
+35,34,Let Freedom Ring,The O'Reilly Factor,c,c
+36,12,Those Who Trespass,Off with Their Heads,c,c
+36,34,Those Who Trespass,The O'Reilly Factor,c,c
+36,35,Those Who Trespass,Let Freedom Ring,c,c
+37,8,Bias,A National Party No More,c,c
+37,10,Bias,Dereliction of Duty,c,c
+37,33,Bias,Useful Idiots,c,c
+37,34,Bias,The O'Reilly Factor,c,c
+37,35,Bias,Let Freedom Ring,c,c
+38,10,Slander,Dereliction of Duty,c,c
+38,12,Slander,Off with Their Heads,c,c
+38,33,Slander,Useful Idiots,c,c
+38,34,Slander,The O'Reilly Factor,c,c
+38,35,Slander,Let Freedom Ring,c,c
+38,37,Slander,Bias,c,c
+39,10,The Savage Nation,Dereliction of Duty,c,c
+39,12,The Savage Nation,Off with Their Heads,c,c
+39,33,The Savage Nation,Useful Idiots,c,c
+39,34,The Savage Nation,The O'Reilly Factor,c,c
+39,35,The Savage Nation,Let Freedom Ring,c,c
+39,38,The Savage Nation,Slander,c,c
+40,8,Deliver Us from Evil,A National Party No More,c,c
+40,12,Deliver Us from Evil,Off with Their Heads,c,c
+40,13,Deliver Us from Evil,Persecution,c,c
+40,20,Deliver Us from Evil,Ten Minutes from Normal,c,c
+40,22,Deliver Us from Evil,The French Betrayal of America,c,c
+40,24,Deliver Us from Evil,Hating America,c,c
+40,25,Deliver Us from Evil,The Third Terrorist,c,c
+40,26,Deliver Us from Evil,Endgame,c,c
+40,27,Deliver Us from Evil,Spin Sisters,c,c
+40,35,Deliver Us from Evil,Let Freedom Ring,c,c
+40,39,Deliver Us from Evil,The Savage Nation,c,c
+41,8,Give Me a Break,A National Party No More,c,c
+41,9,Give Me a Break,Bush Country,c,c
+41,12,Give Me a Break,Off with Their Heads,c,c
+41,27,Give Me a Break,Spin Sisters,c,c
+41,36,Give Me a Break,Those Who Trespass,c,c
+41,40,Give Me a Break,Deliver Us from Evil,c,c
+42,8,The Enemy Within,A National Party No More,c,c
+42,13,The Enemy Within,Persecution,c,c
+42,39,The Enemy Within,The Savage Nation,c,c
+42,40,The Enemy Within,Deliver Us from Evil,c,c
+43,8,The Real America,A National Party No More,c,c
+43,13,The Real America,Persecution,c,c
+43,35,The Real America,Let Freedom Ring,c,c
+43,42,The Real America,The Enemy Within,c,c
+44,8,Who's Looking Out for You?,A National Party No More,c,c
+44,12,Who's Looking Out for You?,Off with Their Heads,c,c
+44,13,Who's Looking Out for You?,Persecution,c,c
+44,35,Who's Looking Out for You?,Let Freedom Ring,c,c
+44,40,Who's Looking Out for You?,Deliver Us from Evil,c,c
+45,8,The Official Handbook Vast Right Wing Conspiracy,A National Party No More,c,c
+45,9,The Official Handbook Vast Right Wing Conspiracy,Bush Country,c,c
+45,11,The Official Handbook Vast Right Wing Conspiracy,Legacy,c,c
+45,26,The Official Handbook Vast Right Wing Conspiracy,Endgame,c,c
+45,40,The Official Handbook Vast Right Wing Conspiracy,Deliver Us from Evil,c,c
+47,9,Arrogance,Bush Country,c,c
+47,11,Arrogance,Legacy,c,c
+47,12,Arrogance,Off with Their Heads,c,c
+47,13,Arrogance,Persecution,c,c
+47,17,Arrogance,Shut Up and Sing,c,c
+47,23,Arrogance,Tales from the Left Coast,c,c
+47,24,Arrogance,Hating America,c,c
+47,26,Arrogance,Endgame,c,c
+47,27,Arrogance,Spin Sisters,c,c
+47,33,Arrogance,Useful Idiots,c,c
+47,36,Arrogance,Those Who Trespass,c,c
+47,37,Arrogance,Bias,c,c
+47,40,Arrogance,Deliver Us from Evil,c,c
+47,41,Arrogance,Give Me a Break,c,c
+47,42,Arrogance,The Enemy Within,c,c
+47,45,Arrogance,The Official Handbook Vast Right Wing Conspiracy,c,c
+47,46,Arrogance,Power Plays,c,n
+49,9,The Bushes,Bush Country,c,c
+49,20,The Bushes,Ten Minutes from Normal,c,c
+49,31,The Bushes,"House of Bush, House of Saud",c,l
+49,48,The Bushes,The Perfect Wife,c,n
+50,9,Things Worth Fighting For,Bush Country,c,c
+50,11,Things Worth Fighting For,Legacy,c,c
+52,9,Allies,Bush Country,c,c
+52,22,Allies,The French Betrayal of America,c,c
+52,51,Allies,"Surprise, Security, the American Experience",c,n
+53,20,Why Courage Matters,Ten Minutes from Normal,c,c
+53,24,Why Courage Matters,Hating America,c,c
+53,26,Why Courage Matters,Endgame,c,c
+53,40,Why Courage Matters,Deliver Us from Evil,c,c
+54,12,Hollywood Interrupted,Off with Their Heads,c,c
+54,23,Hollywood Interrupted,Tales from the Left Coast,c,c
+54,27,Hollywood Interrupted,Spin Sisters,c,c
+54,40,Hollywood Interrupted,Deliver Us from Evil,c,c
+54,41,Hollywood Interrupted,Give Me a Break,c,c
+54,47,Hollywood Interrupted,Arrogance,c,c
+55,10,Fighting Back,Dereliction of Duty,c,c
+55,12,Fighting Back,Off with Their Heads,c,c
+55,15,Fighting Back,Breakdown,c,c
+55,19,Fighting Back,The Right Man,c,c
+56,11,We Will Prevail,Legacy,c,c
+56,19,We Will Prevail,The Right Man,c,c
+56,43,We Will Prevail,The Real America,c,c
+57,13,The Faith of George W Bush,Persecution,c,c
+57,20,The Faith of George W Bush,Ten Minutes from Normal,c,c
+57,48,The Faith of George W Bush,The Perfect Wife,c,n
+57,49,The Faith of George W Bush,The Bushes,c,c
+57,56,The Faith of George W Bush,We Will Prevail,c,c
+58,7,Rise of the Vulcans,Ghost Wars,c,n
+58,14,Rise of the Vulcans,Rumsfeld's War,c,c
+58,30,Rise of the Vulcans,The Price of Loyalty,c,l
+58,49,Rise of the Vulcans,The Bushes,c,c
+58,50,Rise of the Vulcans,Things Worth Fighting For,c,c
+58,51,Rise of the Vulcans,"Surprise, Security, the American Experience",c,n
+58,52,Rise of the Vulcans,Allies,c,c
+77,19,Bush at War,The Right Man,c,c
+77,30,Bush at War,The Price of Loyalty,c,l
+77,31,Bush at War,"House of Bush, House of Saud",c,l
+77,58,Bush at War,Rise of the Vulcans,c,c
+77,71,Bush at War,Against All Enemies,c,l
+77,75,Bush at War,Worse Than Watergate,c,l
+77,76,Bush at War,Plan of Attack,c,n
+30,4,The Price of Loyalty,Sleeping With the Devil,l,n
+30,7,The Price of Loyalty,Ghost Wars,l,n
+31,4,"House of Bush, House of Saud",Sleeping With the Devil,l,n
+31,30,"House of Bush, House of Saud",The Price of Loyalty,l,l
+60,59,Stupid White Men,Downsize This!,l,l
+61,59,Rush Limbaugh Is a Big Fat Idiot,Downsize This!,l,l
+62,59,The Best Democracy Money Can Buy,Downsize This!,l,l
+62,60,The Best Democracy Money Can Buy,Stupid White Men,l,l
+63,59,The Culture of Fear,Downsize This!,l,l
+63,60,The Culture of Fear,Stupid White Men,l,l
+63,62,The Culture of Fear,The Best Democracy Money Can Buy,l,l
+64,51,America Unbound,"Surprise, Security, the American Experience",l,n
+64,52,America Unbound,Allies,l,c
+64,58,America Unbound,Rise of the Vulcans,l,c
+65,51,The Choice,"Surprise, Security, the American Experience",l,n
+65,58,The Choice,Rise of the Vulcans,l,c
+65,64,The Choice,America Unbound,l,l
+66,28,The Great Unraveling,All the Shah's Men,l,n
+66,30,The Great Unraveling,The Price of Loyalty,l,l
+66,64,The Great Unraveling,America Unbound,l,l
+67,30,Rogue Nation,The Price of Loyalty,l,l
+67,64,Rogue Nation,America Unbound,l,l
+67,65,Rogue Nation,The Choice,l,l
+67,66,Rogue Nation,The Great Unraveling,l,l
+68,58,Soft Power,Rise of the Vulcans,l,c
+68,64,Soft Power,America Unbound,l,l
+68,65,Soft Power,The Choice,l,l
+70,30,The Sorrows of Empire,The Price of Loyalty,l,l
+70,64,The Sorrows of Empire,America Unbound,l,l
+70,66,The Sorrows of Empire,The Great Unraveling,l,l
+71,7,Against All Enemies,Ghost Wars,l,n
+71,68,Against All Enemies,Soft Power,l,l
+71,70,Against All Enemies,The Sorrows of Empire,l,l
+72,28,American Dynasty,All the Shah's Men,l,n
+72,49,American Dynasty,The Bushes,l,c
+72,66,American Dynasty,The Great Unraveling,l,l
+72,70,American Dynasty,The Sorrows of Empire,l,l
+72,71,American Dynasty,Against All Enemies,l,l
+73,30,Big Lies,The Price of Loyalty,l,l
+73,31,Big Lies,"House of Bush, House of Saud",l,l
+73,66,Big Lies,The Great Unraveling,l,l
+73,71,Big Lies,Against All Enemies,l,l
+73,72,Big Lies,American Dynasty,l,l
+74,30,The Lies of George W. Bush,The Price of Loyalty,l,l
+74,31,The Lies of George W. Bush,"House of Bush, House of Saud",l,l
+74,66,The Lies of George W. Bush,The Great Unraveling,l,l
+74,71,The Lies of George W. Bush,Against All Enemies,l,l
+74,72,The Lies of George W. Bush,American Dynasty,l,l
+74,73,The Lies of George W. Bush,Big Lies,l,l
+75,30,Worse Than Watergate,The Price of Loyalty,l,l
+75,31,Worse Than Watergate,"House of Bush, House of Saud",l,l
+75,70,Worse Than Watergate,The Sorrows of Empire,l,l
+75,71,Worse Than Watergate,Against All Enemies,l,l
+75,72,Worse Than Watergate,American Dynasty,l,l
+75,73,Worse Than Watergate,Big Lies,l,l
+75,74,Worse Than Watergate,The Lies of George W. Bush,l,l
+78,31,The New Pearl Harbor,"House of Bush, House of Saud",l,l
+78,71,The New Pearl Harbor,Against All Enemies,l,l
+78,72,The New Pearl Harbor,American Dynasty,l,l
+78,74,The New Pearl Harbor,The Lies of George W. Bush,l,l
+78,75,The New Pearl Harbor,Worse Than Watergate,l,l
+79,30,Bushwomen,The Price of Loyalty,l,l
+79,71,Bushwomen,Against All Enemies,l,l
+79,72,Bushwomen,American Dynasty,l,l
+79,74,Bushwomen,The Lies of George W. Bush,l,l
+79,75,Bushwomen,Worse Than Watergate,l,l
+80,30,The Bubble of American Supremacy,The Price of Loyalty,l,l
+80,66,The Bubble of American Supremacy,The Great Unraveling,l,l
+80,71,The Bubble of American Supremacy,Against All Enemies,l,l
+80,72,The Bubble of American Supremacy,American Dynasty,l,l
+81,71,Living History,Against All Enemies,l,l
+82,30,The Politics of Truth,The Price of Loyalty,l,l
+82,31,The Politics of Truth,"House of Bush, House of Saud",l,l
+82,71,The Politics of Truth,Against All Enemies,l,l
+82,72,The Politics of Truth,American Dynasty,l,l
+82,73,The Politics of Truth,Big Lies,l,l
+82,74,The Politics of Truth,The Lies of George W. Bush,l,l
+82,75,The Politics of Truth,Worse Than Watergate,l,l
+82,76,The Politics of Truth,Plan of Attack,l,n
+83,30,Fanatics and Fools,The Price of Loyalty,l,l
+83,71,Fanatics and Fools,Against All Enemies,l,l
+83,73,Fanatics and Fools,Big Lies,l,l
+83,75,Fanatics and Fools,Worse Than Watergate,l,l
+83,76,Fanatics and Fools,Plan of Attack,l,n
+84,30,Bushwhacked,The Price of Loyalty,l,l
+84,60,Bushwhacked,Stupid White Men,l,l
+84,62,Bushwhacked,The Best Democracy Money Can Buy,l,l
+84,66,Bushwhacked,The Great Unraveling,l,l
+84,72,Bushwhacked,American Dynasty,l,l
+84,73,Bushwhacked,Big Lies,l,l
+84,74,Bushwhacked,The Lies of George W. Bush,l,l
+84,75,Bushwhacked,Worse Than Watergate,l,l
+84,76,Bushwhacked,Plan of Attack,l,n
+84,79,Bushwhacked,Bushwomen,l,l
+84,81,Bushwhacked,Living History,l,l
+84,82,Bushwhacked,The Politics of Truth,l,l
+84,83,Bushwhacked,Fanatics and Fools,l,l
+85,7,Disarming Iraq,Ghost Wars,l,n
+85,58,Disarming Iraq,Rise of the Vulcans,l,c
+85,65,Disarming Iraq,The Choice,l,l
+85,66,Disarming Iraq,The Great Unraveling,l,l
+85,72,Disarming Iraq,American Dynasty,l,l
+86,30,Lies and the Lying Liars Who Tell Them,The Price of Loyalty,l,l
+86,60,Lies and the Lying Liars Who Tell Them,Stupid White Men,l,l
+86,61,Lies and the Lying Liars Who Tell Them,Rush Limbaugh Is a Big Fat Idiot,l,l
+86,66,Lies and the Lying Liars Who Tell Them,The Great Unraveling,l,l
+86,72,Lies and the Lying Liars Who Tell Them,American Dynasty,l,l
+86,73,Lies and the Lying Liars Who Tell Them,Big Lies,l,l
+86,76,Lies and the Lying Liars Who Tell Them,Plan of Attack,l,n
+86,81,Lies and the Lying Liars Who Tell Them,Living History,l,l
+86,84,Lies and the Lying Liars Who Tell Them,Bushwhacked,l,l
+87,72,MoveOn's 50 Ways to Love Your Country,American Dynasty,l,l
+87,74,MoveOn's 50 Ways to Love Your Country,The Lies of George W. Bush,l,l
+87,83,MoveOn's 50 Ways to Love Your Country,Fanatics and Fools,l,l
+87,84,MoveOn's 50 Ways to Love Your Country,Bushwhacked,l,l
+88,66,The Buying of the President 2004,The Great Unraveling,l,l
+88,72,The Buying of the President 2004,American Dynasty,l,l
+88,74,The Buying of the President 2004,The Lies of George W. Bush,l,l
+88,84,The Buying of the President 2004,Bushwhacked,l,l
+89,66,Perfectly Legal,The Great Unraveling,l,l
+89,72,Perfectly Legal,American Dynasty,l,l
+89,73,Perfectly Legal,Big Lies,l,l
+89,84,Perfectly Legal,Bushwhacked,l,l
+89,86,Perfectly Legal,Lies and the Lying Liars Who Tell Them,l,l
+89,88,Perfectly Legal,The Buying of the President 2004,l,l
+90,66,Hegemony or Survival,The Great Unraveling,l,l
+90,70,Hegemony or Survival,The Sorrows of Empire,l,l
+90,72,Hegemony or Survival,American Dynasty,l,l
+91,31,The Exception to the Rulers,"House of Bush, House of Saud",l,l
+91,72,The Exception to the Rulers,American Dynasty,l,l
+91,74,The Exception to the Rulers,The Lies of George W. Bush,l,l
+91,75,The Exception to the Rulers,Worse Than Watergate,l,l
+91,79,The Exception to the Rulers,Bushwomen,l,l
+91,90,The Exception to the Rulers,Hegemony or Survival,l,l
+92,72,Freethinkers,American Dynasty,l,l
+92,73,Freethinkers,Big Lies,l,l
+92,75,Freethinkers,Worse Than Watergate,l,l
+93,30,Had Enough?,The Price of Loyalty,l,l
+93,66,Had Enough?,The Great Unraveling,l,l
+93,73,Had Enough?,Big Lies,l,l
+93,86,Had Enough?,Lies and the Lying Liars Who Tell Them,l,l
+94,73,"It's Still the Economy, Stupid!",Big Lies,l,l
+94,84,"It's Still the Economy, Stupid!",Bushwhacked,l,l
+94,93,"It's Still the Economy, Stupid!",Had Enough?,l,l
+95,61,We're Right They're Wrong,Rush Limbaugh Is a Big Fat Idiot,l,l
+95,73,We're Right They're Wrong,Big Lies,l,l
+95,94,We're Right They're Wrong,"It's Still the Economy, Stupid!",l,l
+96,66,What Liberal Media?,The Great Unraveling,l,l
+96,73,What Liberal Media?,Big Lies,l,l
+96,84,What Liberal Media?,Bushwhacked,l,l
+96,94,What Liberal Media?,"It's Still the Economy, Stupid!",l,l
+97,66,The Clinton Wars,The Great Unraveling,l,l
+97,73,The Clinton Wars,Big Lies,l,l
+97,81,The Clinton Wars,Living History,l,l
+97,84,The Clinton Wars,Bushwhacked,l,l
+97,86,The Clinton Wars,Lies and the Lying Liars Who Tell Them,l,l
+97,96,The Clinton Wars,What Liberal Media?,l,l
+98,73,Weapons of Mass Deception,Big Lies,l,l
+98,74,Weapons of Mass Deception,The Lies of George W. Bush,l,l
+98,87,Weapons of Mass Deception,MoveOn's 50 Ways to Love Your Country,l,l
+98,91,Weapons of Mass Deception,The Exception to the Rulers,l,l
+99,30,"Dude, Where's My Country?",The Price of Loyalty,l,l
+99,59,"Dude, Where's My Country?",Downsize This!,l,l
+99,60,"Dude, Where's My Country?",Stupid White Men,l,l
+99,62,"Dude, Where's My Country?",The Best Democracy Money Can Buy,l,l
+99,63,"Dude, Where's My Country?",The Culture of Fear,l,l
+99,66,"Dude, Where's My Country?",The Great Unraveling,l,l
+99,73,"Dude, Where's My Country?",Big Lies,l,l
+99,74,"Dude, Where's My Country?",The Lies of George W. Bush,l,l
+99,84,"Dude, Where's My Country?",Bushwhacked,l,l
+99,90,"Dude, Where's My Country?",Hegemony or Survival,l,l
+99,93,"Dude, Where's My Country?",Had Enough?,l,l
+100,62,Thieves in High Places,The Best Democracy Money Can Buy,l,l
+100,66,Thieves in High Places,The Great Unraveling,l,l
+100,73,Thieves in High Places,Big Lies,l,l
+100,79,Thieves in High Places,Bushwomen,l,l
+100,83,Thieves in High Places,Fanatics and Fools,l,l
+100,84,Thieves in High Places,Bushwhacked,l,l
+100,86,Thieves in High Places,Lies and the Lying Liars Who Tell Them,l,l
+100,91,Thieves in High Places,The Exception to the Rulers,l,l
+100,96,Thieves in High Places,What Liberal Media?,l,l
+100,98,Thieves in High Places,Weapons of Mass Deception,l,l
+100,99,Thieves in High Places,"Dude, Where's My Country?",l,l
+101,61,Shrub,Rush Limbaugh Is a Big Fat Idiot,l,l
+101,84,Shrub,Bushwhacked,l,l
+101,86,Shrub,Lies and the Lying Liars Who Tell Them,l,l
+101,94,Shrub,"It's Still the Economy, Stupid!",l,l
+101,100,Shrub,Thieves in High Places,l,l
+102,46,Buck Up Suck Up,Power Plays,l,n
+102,93,Buck Up Suck Up,Had Enough?,l,l
+102,94,Buck Up Suck Up,"It's Still the Economy, Stupid!",l,l
+102,95,Buck Up Suck Up,We're Right They're Wrong,l,l
+4,0,Sleeping With the Devil,1000 Years for Revenge,n,n
+4,2,Sleeping With the Devil,Charlie Wilson's War,n,c
+6,0,Why America Slept,1000 Years for Revenge,n,n
+6,1,Why America Slept,Bush vs. the Beltway,n,c
+6,4,Why America Slept,Sleeping With the Devil,n,n
+6,5,Why America Slept,The Man Who Warned America,n,c
+7,2,Ghost Wars,Charlie Wilson's War,n,c
+7,5,Ghost Wars,The Man Who Warned America,n,c
+7,6,Ghost Wars,Why America Slept,n,n
+18,3,Meant To Be,Losing Bin Laden,n,c
+18,6,Meant To Be,Why America Slept,n,n
+18,12,Meant To Be,Off with Their Heads,n,c
+28,4,All the Shah's Men,Sleeping With the Devil,n,n
+46,8,Power Plays,A National Party No More,n,c
+46,12,Power Plays,Off with Their Heads,n,c
+48,9,The Perfect Wife,Bush Country,n,c
+48,20,The Perfect Wife,Ten Minutes from Normal,n,c
+51,9,"Surprise, Security, the American Experience",Bush Country,n,c
+69,51,Colossus,"Surprise, Security, the American Experience",n,n
+69,58,Colossus,Rise of the Vulcans,n,c
+69,64,Colossus,America Unbound,n,l
+69,65,Colossus,The Choice,n,l
+76,30,Plan of Attack,The Price of Loyalty,n,l
+76,31,Plan of Attack,"House of Bush, House of Saud",n,l
+76,49,Plan of Attack,The Bushes,n,c
+76,53,Plan of Attack,Why Courage Matters,n,c
+76,66,Plan of Attack,The Great Unraveling,n,l
+76,71,Plan of Attack,Against All Enemies,n,l
+76,72,Plan of Attack,American Dynasty,n,l
+76,75,Plan of Attack,Worse Than Watergate,n,l
+103,67,The Future of Freedom,Rogue Nation,n,l
+104,67,Empire,Rogue Nation,n,l
+104,69,Empire,Colossus,n,n
+104,103,Empire,The Future of Freedom,n,n
