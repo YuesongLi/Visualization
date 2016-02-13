@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+circle,
+path {
+  cursor: pointer;
+}
+
+circle {
+  fill: none;
+  pointer-events: all;
+  color:black;
+}
+
+#tooltip { background-color: white;
+			  padding: 3px 5px;
+			  border: 1px solid black;
+			  text-align: center;}
+
+html {
+	font-family: sans-serif;
+	font-size: 14px;
+	
+}
+.myButton {
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:25px 48px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+<body style=" border-radius: 25px; border: 2px solid black; padding: 0px; margin-right: 150px; margin-top: 70; margin-down: 150px; margin-left: 150px;">
+
+
+ <div style="font-size:45px; font-weight: bold; text-align:center; font-family: times; margin-top:30px;">
+Overview
+</div>
+
+<div style="font-size:16px; margin-left:100px; margin-right:100px; text-align:justify;">
+<p>
+As the broad development of information and communication Technology (ICT) ,more and more companies cost much on ICT construction. In this project, our analysis focuses on the U.S. market development of ICT from 2004 to 2013. These data can greatly help not only ICT technology suppliers to decide the main direction of their business, but also the decision makers from Industry and government to get know about development trends of ICT, and then apply ICT to improve business and Economy. 
+<br/>
+<br/>
+There are 3 parts in our visualization for this dataset. In our visualization system, user can overview the dataset structure, derive and compare the total expenditures for different uses of ICT expenditure in each year, and do the trend analysis.
+<br/>
+<br/>
+The first visualization is the Overview. It shows the general view of all information in the tables. It is implemented by zoomable sunburst. In this chart the first row will show the year, which is supposed to start from 2003 to 2013. The second row will show industries. By clicking on each year it will change the view to focus on that particular year and show the industries and capitzlized and non capitalized expenditures for that particular year, and by clicking on each industry, the expenditurerelated to software and equipment will come into view. Arc’s angle shows the amount of expenditure on that class of object and colors show categories. In each category saturation show the value. The name of each category is also labeled on the arc. We also use tips to show exact amount of expenditure for each category.
+</p>
+</div>
+
+
+ <div style="font-size:45px; font-weight: bold; float:middle; font-family: times;">
+ <table width="100%" align="middle"><tr><td width="50%" align="middle"><button type="button" onclick="location.href = 'useofE.html';" class="myButton">Use</button> </td>
+ <td width="50%" align="middle"><button type="button" onclick="location.href = 'themeriver.html';" class="myButton">Trend</button>  </td></tr></table>
+</br>
+
+</div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var margin = {top: 250, right: 380, bottom: 250, left: 520},
+    radius = Math.min(margin.top, margin.right, margin.bottom, margin.left) - 10;
+
+function filter_min_arc_size_text(d, i) {return (d.dx*d.depth*radius/3)>14}; 
+
+var hue = d3.scale.category10();
+
+var luminance = d3.scale.sqrt()
+    .domain([0, 1e6])
+    .clamp(true)
+    .range([90, 20]);
+
+var svg = d3.select("body").append("svg")
+    .attr("width", margin.left + margin.right)
+    .attr("height", margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var partition = d3.layout.partition()
+    .sort(function(a, b) { return d3.ascending(a.name, b.name); })
+    .size([2 * Math.PI, radius]);
+
+var arc = d3.svg.arc()
+    .startAngle(function(d) { return d.x; })
+    .endAngle(function(d) { return d.x + d.dx - .01 / (d.depth + .5); })
+    .innerRadius(function(d) { return radius / 3 * d.depth; })
+    .outerRadius(function(d) { return radius / 3 * (d.depth + 1) - 1; });
+
+//Tooltip description
+var tooltip = d3.select("body")
+    .append("div")
+    .attr("id", "tooltip")
+    .style("position", "absolute")
+    .style("z-index", "10")
+    .style("opacity", 0);
+
+function format_number(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+
+function format_description(d) {
+  var description = d.description;
+      return  '<b>' + d.name + '</b></br>'+ d.description + '<br> (' + format_number(d.value) + ')';
+}
+
+function computeTextRotation(d) {
+	var angle=(d.x +d.dx/2)*180/Math.PI - 90	
+	
+	return angle;
+}
+
+function mouseOverArc(d) {
+			 d3.select(this).attr("stroke","black")
+			 
+          tooltip.html(format_description(d));
+          return tooltip.transition()
+            .duration(50)
+            .style("opacity", 0.9);
+        }
+
+function mouseOutArc(){
+	d3.select(this).attr("stroke","")
+	return tooltip.style("opacity", 0);
+}
+
+function mouseMoveArc (d) {
+          return tooltip
+            .style("top", (d3.event.pageY-10)+"px")
+            .style("left", (d3.event.pageX+10)+"px");
+}
+
+var root_ = null;
+d3.json("data/alldata.json", function(error, root) {
+  if (error) return console.warn(error);
+  // Compute the initial layout on the entire tree to sum sizes.
+  // Also compute the full name and fill color for each node,
+  // and stash the children so they can be restored as we descend.
+	
+  partition
+      .value(function(d) { return d.size; })
+      .nodes(root)
+      .forEach(function(d) {
+        d._children = d.children;
+        d.sum = d.value;
+        d.key = key(d);
+        d.fill = fill(d);
+      });
+
+  // Now redefine the value function to use the previously-computed sum.
+  partition
+      .children(function(d, depth) { return depth < 2 ? d._children : null; })
+      .value(function(d) { return d.sum; });
+
+  var center = svg.append("circle")
+      .attr("r", radius / 3)
+      .on("click", zoomOut);
+
+   var midText= svg.append("text")
+	.attr("x",-40)
+    .attr("y", 0)
+    .attr("dy", ".35em")
+    .text("expenditures");
+
+
+  center.append("title")
+      .text("zoom out");
+      
+  var partitioned_data=partition.nodes(root).slice(1)
+
+  var path = svg.selectAll("path")
+      .data(partitioned_data)
+    .enter().append("path")
+      .attr("d", arc)
+      .style("fill", function(d) { return d.fill; })
+      .each(function(d) { this._current = updateArc(d); })
+      .on("click", zoomIn)
+		.on("mouseover", mouseOverArc)
+      .on("mousemove", mouseMoveArc)
+      .on("mouseout", mouseOutArc);
+  
+      
+  var texts = svg.selectAll("text")
+      .data(partitioned_data)
+    .enter().append("text")
+		.filter(filter_min_arc_size_text)    	
+    	.attr("transform", function(d) { return "rotate(" + computeTextRotation(d) + ")"; })
+		.attr("x", function(d) { return radius / 3 * d.depth; })	
+		.attr("dx", "6") // margin
+      .attr("dy", ".35em") // vertical-align	
+		.text(function(d,i) {return d.name})
+
+
+  function zoomIn(p) {
+    if (p.depth > 1) p = p.parent;
+    if (!p.children) return;
+
+    midText.remove()    
+
+
+    midText= svg.append("text")
+	.attr("x",-30)
+    .attr("y", 0)
+    .attr("dy", ".35em")
+    .text(function(){return p.name;});
+
+
+    zoom(p, p);
+  }
+
+  function zoomOut(p) {
+    if (!p.parent) return;
+
+    midText.remove()    
+
+    midText= svg.append("text")
+	.attr("x",-40)
+    .attr("y", 0)
+    .attr("dy", ".35em")
+    .text(function(){return p.parent.name;});
+    zoom(p.parent, p);
+  }
+
+  // Zoom to the specified new root.
+  function zoom(root, p) {
+
+    if (document.documentElement.__transition__) return;
+
+
+    // Rescale outside angles to match the new layout.
+    var enterArc,
+        exitArc,
+        outsideAngle = d3.scale.linear().domain([0, 2 * Math.PI]);
+
+    function insideArc(d) {
+      return p.key > d.key
+          ? {depth: d.depth - 1, x: 0, dx: 0} : p.key < d.key
+          ? {depth: d.depth - 1, x: 2 * Math.PI, dx: 0}
+          : {depth: 0, x: 0, dx: 2 * Math.PI};
+    }
+
+    function outsideArc(d) {
+      return {depth: d.depth + 1, x: outsideAngle(d.x), dx: outsideAngle(d.x + d.dx) - outsideAngle(d.x)};
+    }
+
+    center.datum(root);
+
+    // When zooming in, arcs enter from the outside and exit to the inside.
+    // Entering outside arcs start from the old layout.
+    if (root === p) enterArc = outsideArc, exitArc = insideArc, outsideAngle.range([p.x, p.x + p.dx]);
+	
+	 var new_data=partition.nodes(root).slice(1)
+
+    path = path.data(new_data, function(d) { return d.key; });
+	 	 
+	 // When zooming out, arcs enter from the inside and exit to the outside.
+    // Exiting outside arcs transition to the new layout.
+    if (root !== p) enterArc = insideArc, exitArc = outsideArc, outsideAngle.range([p.x, p.x + p.dx]);
+
+    d3.transition().duration(d3.event.altKey ? 7500 : 750).each(function() {
+      path.exit().transition()
+          .style("fill-opacity", function(d) { return d.depth === 1 + (root === p) ? 1 : 0; })
+          .attrTween("d", function(d) { return arcTween.call(this, exitArc(d)); })
+          .remove();
+          
+      path.enter().append("path")
+          .style("fill-opacity", function(d) { return d.depth === 2 - (root === p) ? 1 : 0; })
+          .style("fill", function(d) { return d.fill; })
+          .on("click", zoomIn)
+			 .on("mouseover", mouseOverArc)
+      	 .on("mousemove", mouseMoveArc)
+      	 .on("mouseout", mouseOutArc)
+          .each(function(d) { this._current = enterArc(d); });
+
+		
+      path.transition()
+          .style("fill-opacity", 1)
+          .attrTween("d", function(d) { return arcTween.call(this, updateArc(d)); });
+          
+      
+         
+    });
+    
+    
+	 texts = texts.data(new_data, function(d) { return d.key; })
+	 
+	 texts.exit()
+	         .remove()    
+    texts.enter()
+            .append("text")
+      	
+    texts.style("opacity", 0)
+      .attr("transform", function(d) { return "rotate(" + computeTextRotation(d) + ")"; })
+		.attr("x", function(d) { return radius / 3 * d.depth; })	
+		.attr("dx", "6") // margin
+      .attr("dy", ".35em") // vertical-align
+      .filter(filter_min_arc_size_text)    	
+      .text(function(d,i) {return d.name})
+		.transition().delay(750).style("opacity", 1)
+      	
+		 
+  }
+});
+
+function key(d) {
+  var k = [], p = d;
+  while (p.depth) k.push(p.name), p = p.parent;
+  return k.reverse().join(".");
+}
+
+function fill(d) {
+  var p = d;
+  while (p.depth > 1) p = p.parent;
+  var c = d3.lab(hue(p.name));
+  c.l = luminance(d.sum);
+  return c;
+}
+
+function arcTween(b) {
+  var i = d3.interpolate(this._current, b);
+  this._current = i(0);
+  return function(t) {
+    return arc(i(t));
+  };
+}
+
+function updateArc(d) {
+  return {depth: d.depth, x: d.x, dx: d.dx};
+}
+
+d3.select(self.frameElement).style("height", margin.top + margin.bottom + "px");
+
+</script> 
+
+
+
+</body>
+
